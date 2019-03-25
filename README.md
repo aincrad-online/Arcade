@@ -1,4 +1,7 @@
-# Arcade
+Unit 8: Group Milestone
+===
+
+# ARCADIA
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -8,16 +11,16 @@
 
 ## Overview
 ### Description
-[Description of your app]
+
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+
+- **Category:** Game
+- **Mobile:** The app would primarily be developed for use on mobile platforms as well as the iPad. It could be developed for use on laptops as well.
+- **Story:** User plays game where they control a ship and shoot rocks/enemies while attempting to get a high score.
+- **Market:** Availible for all ages. The users are not connected, so there will be no communication. 
+- **Habit:** This app can be used when users are bored and need something to help them pass the time by.
+- **Scope:** The user would first start with few, slow rocks and no enemies. As the game progresses, the rocks will increase in number and speed. The enemies will do so as well.
 
 ## Product Spec
 
@@ -26,38 +29,42 @@
 **Required Must-have Stories**
 
 * [fill in your required user stories here]
-* ...
+* User can navigate a main menu screen
+* User can start a new game from the menu screen
+* user can access a settings page from menu
+* User highscore is saved locally
+* 
 
 **Optional Nice-to-have Stories**
 
 * [fill in your required user stories here]
-* ...
+* Users can log in and save highscores online
+* User can acces a leaderboard on the menu page and see top 100 scores
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* #### Welcome Screen
+   * Start new game option
+   * Enter settings screen
+   * (Optional) Enter leaderboard screen
+* #### Game screen
+   * User can play the space invaders game
+   * When the user dies they have the option to play again or restart
+   * 
+* #### Settings screen
+   * User can control music (turn down/off)
+   * User can reset local highscore
+* #### (Optional) Leaderboard Screen
+   * User can view top 100 scores saved on server from other users
 
 ### 3. Navigation
 
-**Tab Navigation** (Tab to Screen)
-
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Main Menu
+   * Settings -> Toggle Settings
+   * Start Game -> Game starts playing
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
