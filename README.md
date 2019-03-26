@@ -33,7 +33,6 @@ Unit 8: Group Milestone
 * User can start a new game from the menu screen
 * user can access a settings page from menu
 * User highscore is saved locally
-* 
 
 **Optional Nice-to-have Stories**
 
@@ -50,7 +49,6 @@ Unit 8: Group Milestone
 * #### Game screen
    * User can play the space invaders game
    * When the user dies they have the option to play again or restart
-   * 
 * #### Settings screen
    * User can control music (turn down/off)
    * User can reset local highscore
