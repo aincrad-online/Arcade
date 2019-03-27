@@ -64,7 +64,7 @@ Unit 8: Group Milestone
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-![Alt text](relative/wireframe.jpg?raw=true "project_wireframe")
+![Alt text](relative/wireframe.JPG?raw=true "project_wireframe")
 
 ### [BONUS] Digital Wireframes & Mockups
 
