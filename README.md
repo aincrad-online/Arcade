@@ -63,7 +63,6 @@ Unit 8: Group Milestone
    * Start Game -> Game starts playing
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 ![Alt text](wireframe.jpg?raw=true "project_wireframe")
 
 ### [BONUS] Digital Wireframes & Mockups
