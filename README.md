@@ -65,6 +65,7 @@ Unit 8: Group Milestone
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
 ![alt text](https://raw.githubusercontent.com/aincrad-online/Arcade/blob/master/IMG_6548.JPG)
+relative/wireframe.jpg?raw=true "project_wireframe"
 
 ### [BONUS] Digital Wireframes & Mockups
 
