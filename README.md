@@ -28,7 +28,6 @@ Unit 8: Group Milestone
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
 * User can navigate a main menu screen
 * User can start a new game from the menu screen
 * user can access a settings page from menu
@@ -36,7 +35,6 @@ Unit 8: Group Milestone
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
 * Users can log in and save highscores online
 * User can acces a leaderboard on the menu page and see top 100 scores
 
