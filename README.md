@@ -64,8 +64,7 @@ Unit 8: Group Milestone
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="IMG_6548.HEIC" width=600>
-![](YOUR_IMAGE_URL_HERE)
+![alt text](https://raw.githubusercontent.com/aincrad-online/Arcade/blob/master/IMG_6548.JPG)
 
 ### [BONUS] Digital Wireframes & Mockups
 
