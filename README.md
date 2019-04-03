@@ -66,10 +66,52 @@ Unit 8: Group Milestone
 ![Alt text](wireframe.jpg?raw=true "project_wireframe")
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+#### Scores
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | author        | Pointer to User| player's username |
+   | score         | Number     | player's high score |
+   | createdAt     | DateTime | date when score is achieved (default field) |
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+   - Home Feed Screen
+      - (create/POST) Submit a highscore
+         ```swift
+        let score = PFObject(className: "Scores")
+        score["score"] = int(currentScoreLabel.text)
+        comment["createdAt"] = currentDate
+        comment["author"] = AuthorLabel.text
+
+        selectedPost.add(score, forKey: "scores")
+
+        selectedPost.saveInBackground { (success, error) in
+            if success{
+                print("comment saved")
+            }
+            else{
+                print("error posting comment: \(error)")
+            }
+        }
+         ```
+      - (Read/GET) Query submitted highcores
+         ```swift
+         let query = PFQuery(className:"Scores")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+
+
