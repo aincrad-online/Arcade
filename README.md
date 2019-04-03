@@ -74,7 +74,6 @@ Unit 8: Group Milestone
    | ------------- | -------- | ------------|
    | author        | Pointer to User| player's username |
    | score         | Number     | player's high score |
-   | createdAt     | DateTime | date when score is achieved (default field) |
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
@@ -85,7 +84,6 @@ Unit 8: Group Milestone
          ```swift
         let score = PFObject(className: "Scores")
         score["score"] = int(currentScoreLabel.text)
-        comment["createdAt"] = currentDate
         comment["author"] = AuthorLabel.text
 
         selectedPost.add(score, forKey: "scores")
@@ -101,17 +99,17 @@ Unit 8: Group Milestone
          ```
       - (Read/GET) Query submitted highscores
          ```swift
-         let query = PFQuery(className:"Scores")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(posts.count) posts.")
-           // TODO: Do something with posts...
-            }
-         }
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell             {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ScoreCell") as! ScoreCell
+            let score = scores[indexpath.row]
+            
+
+            cell.scoreLabel.text = score["text"] as? String        
+            cell.nameLabel.text = score["author"]
+            
+            return cell
+        }
          ```
+
 
 
