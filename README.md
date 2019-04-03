@@ -84,11 +84,10 @@ Unit 8: Group Milestone
          ```swift
         let score = PFObject(className: "Scores")
         score["score"] = int(currentScoreLabel.text)
-        comment["author"] = AuthorLabel.text
+        score["author"] = AuthorLabel.text
 
-        selectedPost.add(score, forKey: "scores")
 
-        selectedPost.saveInBackground { (success, error) in
+        score.saveInBackground { (success, error) in
             if success{
                 print("score saved")
             }
