@@ -92,14 +92,14 @@ Unit 8: Group Milestone
 
         selectedPost.saveInBackground { (success, error) in
             if success{
-                print("comment saved")
+                print("score saved")
             }
             else{
-                print("error posting comment: \(error)")
+                print("error posting score: \(error)")
             }
         }
          ```
-      - (Read/GET) Query submitted highcores
+      - (Read/GET) Query submitted highscores
          ```swift
          let query = PFQuery(className:"Scores")
          query.whereKey("author", equalTo: currentUser)
