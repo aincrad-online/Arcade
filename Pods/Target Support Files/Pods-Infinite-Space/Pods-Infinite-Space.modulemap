@@ -1,0 +1,6 @@
+framework module Pods_Infinite_Space {
+  umbrella header "Pods-Infinite-Space-umbrella.h"
+
+  export *
+  module * { export * }
+}

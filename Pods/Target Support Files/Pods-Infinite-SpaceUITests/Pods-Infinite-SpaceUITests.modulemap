@@ -1,0 +1,6 @@
+framework module Pods_Infinite_SpaceUITests {
+  umbrella header "Pods-Infinite-SpaceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
