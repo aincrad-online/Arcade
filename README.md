@@ -41,17 +41,17 @@ Unit 8: Group Milestone
 ### 2. Screen Archetypes
 
 * #### Welcome Screen
-   [ ] - Start new game option
-   [x] - Enter settings screen
-   [ ] - (Optional) Enter leaderboard screen
+   - [ ] Start new game option
+   - [x] Enter settings screen
+   - [ ] (Optional) Enter leaderboard screen
 * #### Game screen
-   [ ] - User can play the space invaders game
-   [ ] - When the user dies they have the option to play again or restart
+   - [ ] User can play the space invaders game
+   - [ ] When the user dies they have the option to play again or restart
 * #### Settings screen
-   [ ] - User can control music (turn down/off)
-   [ ] - User can reset local highscore
+   - [ ] User can control music (turn down/off)
+   - [ ] User can reset local highscore
 * #### (Optional) Leaderboard Screen
-   [ ] - User can view top 100 scores saved on server from other users
+   - [ ] User can view top 100 scores saved on server from other users
 
 ### 3. Navigation
 
