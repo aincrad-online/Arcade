@@ -14,6 +14,7 @@
         <scene sceneID="34m-vg-AmW">
             <objects>
                 <navigationController id="NUF-Kj-9eP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ACB-Z5-yge"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Lm-LO-CN8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -24,7 +25,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JwE-sg-G21" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2519" y="781"/>
+            <point key="canvasLocation" x="-2526" y="799"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -39,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="781"/>
+            <point key="canvasLocation" x="-706" y="797"/>
         </scene>
         <!--Settings-->
         <scene sceneID="RsX-th-lHk">
@@ -101,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YRq-xm-QHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1706.4000000000001" y="779.46026986506752"/>
+            <point key="canvasLocation" x="-1706" y="798"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u5z-DJ-F0w">
@@ -127,6 +128,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" id="uUv-uB-zfE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10j-ha-ZVa">
                                 <rect key="frame" x="111" y="516" width="153" height="30"/>
@@ -144,6 +148,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="NUF-Kj-9eP" kind="presentation" id="vJE-eq-J8l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jX1-CP-7PA">
                                 <rect key="frame" x="111" y="421" width="153" height="30"/>
@@ -161,6 +168,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4hS-kI-TVL" kind="presentation" id="m1a-Ex-sE8"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Infinite Space" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmX-VQ-rZu">
                                 <rect key="frame" x="111" y="120" width="153" height="40"/>
@@ -262,7 +272,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hH0-VL-rvB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952.79999999999995" y="781.25937031484261"/>
+            <point key="canvasLocation" x="950" y="798"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pxv-pV-ZVp">
@@ -278,7 +288,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEm-P9-fjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111" y="781"/>
+            <point key="canvasLocation" x="167" y="798"/>
         </scene>
     </scenes>
 </document>
