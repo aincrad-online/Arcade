@@ -28,15 +28,15 @@ Unit 8: Group Milestone
 
 **Required Must-have Stories**
 
-[x] - User can navigate a main menu screen
-[ ] - User can start a new game from the menu screen
-[x] - User can access a settings page from menu
-[ ] - User highscore is saved locally
+- [x] User can navigate a main menu screen
+- [ ] User can start a new game from the menu screen
+- [x] User can access a settings page from menu
+- [ ] User highscore is saved locally
 
 **Optional Nice-to-have Stories**
 
-[ ] - Users can log in and save highscores online
-[ ] - User can acces a leaderboard on the menu page and see top 100 scores
+- [ ] Users can log in and save highscores online
+- [ ] User can acces a leaderboard on the menu page and see top 100 scores
 
 ### 2. Screen Archetypes
 
