@@ -28,30 +28,30 @@ Unit 8: Group Milestone
 
 **Required Must-have Stories**
 
-* User can navigate a main menu screen
-* User can start a new game from the menu screen
-* user can access a settings page from menu
-* User highscore is saved locally
+[x] - User can navigate a main menu screen
+[ ] - User can start a new game from the menu screen
+[x] - User can access a settings page from menu
+[ ] - User highscore is saved locally
 
 **Optional Nice-to-have Stories**
 
-* Users can log in and save highscores online
-* User can acces a leaderboard on the menu page and see top 100 scores
+[ ] - Users can log in and save highscores online
+[ ] - User can acces a leaderboard on the menu page and see top 100 scores
 
 ### 2. Screen Archetypes
 
 * #### Welcome Screen
-   * Start new game option
-   * Enter settings screen
-   * (Optional) Enter leaderboard screen
+   [ ] - Start new game option
+   [x] - Enter settings screen
+   [ ] - (Optional) Enter leaderboard screen
 * #### Game screen
-   * User can play the space invaders game
-   * When the user dies they have the option to play again or restart
+   [ ] - User can play the space invaders game
+   [ ] - When the user dies they have the option to play again or restart
 * #### Settings screen
-   * User can control music (turn down/off)
-   * User can reset local highscore
+   [ ] - User can control music (turn down/off)
+   [ ] - User can reset local highscore
 * #### (Optional) Leaderboard Screen
-   * User can view top 100 scores saved on server from other users
+   [ ] - User can view top 100 scores saved on server from other users
 
 ### 3. Navigation
 
