@@ -54,35 +54,30 @@
                                 <rect key="frame" x="16" y="145" width="50" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sound FX" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-kA-CfC">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sound FX" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-kA-CfC">
                                 <rect key="frame" x="74" y="145" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mmv-zg-uZI">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mmv-zg-uZI">
                                 <rect key="frame" x="74" y="176" width="208" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-kx-arB">
                                 <rect key="frame" x="16" y="284" width="50" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game Volume" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-XO-EaL">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game Volume" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-XO-EaL">
                                 <rect key="frame" x="74" y="284" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="M8E-S0-ehw">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="M8E-S0-ehw">
                                 <rect key="frame" x="74" y="322" width="208" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwX-Tj-G8e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwX-Tj-G8e">
                                 <rect key="frame" x="74" y="448" width="206" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21845921870000001" green="0.62778681520000001" blue="0.95119148490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Reset Stats">
@@ -91,6 +86,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mwX-Tj-G8e" firstAttribute="trailing" secondItem="mmv-zg-uZI" secondAttribute="trailing" id="0l7-Eb-2Le"/>
+                            <constraint firstItem="mwX-Tj-G8e" firstAttribute="leading" secondItem="mYO-Jy-fsa" secondAttribute="leading" constant="74" id="AGA-Zo-L16"/>
+                            <constraint firstItem="mYO-Jy-fsa" firstAttribute="bottom" secondItem="mwX-Tj-G8e" secondAttribute="bottom" constant="183" id="Hom-zx-ihy"/>
+                            <constraint firstItem="mwX-Tj-G8e" firstAttribute="leading" secondItem="PeS-kA-CfC" secondAttribute="leading" id="Jh9-fU-40o"/>
+                            <constraint firstItem="mwX-Tj-G8e" firstAttribute="top" secondItem="M8E-S0-ehw" secondAttribute="bottom" constant="97" id="LWS-TC-kn3"/>
+                            <constraint firstItem="mwX-Tj-G8e" firstAttribute="leading" secondItem="Mgk-XO-EaL" secondAttribute="leading" id="OAc-dY-hW7"/>
+                            <constraint firstItem="mwX-Tj-G8e" firstAttribute="trailing" secondItem="M8E-S0-ehw" secondAttribute="trailing" id="sPK-pT-SAz"/>
+                            <constraint firstItem="mYO-Jy-fsa" firstAttribute="trailing" secondItem="mwX-Tj-G8e" secondAttribute="trailing" constant="95" id="tA0-VC-Crd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mYO-Jy-fsa"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="jYK-Oe-zex">
@@ -133,7 +138,7 @@
                                 <color key="backgroundColor" red="0.21845921870000001" green="0.62778681520000001" blue="0.95119148490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="32O-Nx-Inc"/>
-                                    <constraint firstAttribute="width" constant="153" id="QD9-Wq-RtR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="QD9-Wq-RtR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <state key="normal" title="Settings">
@@ -144,10 +149,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jX1-CP-7PA">
-                                <rect key="frame" x="111" y="421" width="153" height="30"/>
+                                <rect key="frame" x="93" y="421" width="191" height="30"/>
                                 <color key="backgroundColor" red="0.21845921870000001" green="0.62778681520000001" blue="0.95119148490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="Mfj-Vi-KRx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="191" id="Mfj-Vi-KRx"/>
                                     <constraint firstAttribute="height" constant="30" id="UWa-gQ-pyV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
@@ -168,7 +173,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AkB-Ii-vgK" firstAttribute="leading" secondItem="jX1-CP-7PA" secondAttribute="leading" id="7Bp-FS-ycY"/>
+                            <constraint firstItem="AkB-Ii-vgK" firstAttribute="leading" secondItem="jX1-CP-7PA" secondAttribute="leading" constant="18" id="7Bp-FS-ycY"/>
                             <constraint firstItem="10j-ha-ZVa" firstAttribute="top" secondItem="jX1-CP-7PA" secondAttribute="bottom" constant="65" id="Aa3-dc-uqY"/>
                             <constraint firstItem="AkB-Ii-vgK" firstAttribute="leading" secondItem="10j-ha-ZVa" secondAttribute="leading" id="JNd-Y3-6bK"/>
                             <constraint firstItem="AkB-Ii-vgK" firstAttribute="centerX" secondItem="Ciw-Ia-XwJ" secondAttribute="centerX" id="bW5-vy-8HD"/>
@@ -190,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VkU-Bs-AjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-706" y="23"/>
+            <point key="canvasLocation" x="-706.39999999999998" y="22.938530734632685"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="YWQ-rC-hg2">
