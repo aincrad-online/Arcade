@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FLAnimatedImage
 
 class HomeViewController: UIViewController {
 
@@ -15,17 +15,29 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var LeaderboardButton: UIButton!
     @IBOutlet weak var SettingsButton: UIButton!
     
+    
+    @IBOutlet weak var LogoGif: FLAnimatedImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        PlayButton.layer.cornerRadius = 15
-        PlayButton.layer.borderWidth = 1
-        LeaderboardButton.layer.cornerRadius = 15
-        LeaderboardButton.layer.borderWidth = 1
-        SettingsButton.layer.cornerRadius = 15
-        SettingsButton.layer.borderWidth = 1
+        PlayButton.layer.borderWidth = 0
+        LeaderboardButton.layer.borderWidth = 0
+        SettingsButton.layer.borderWidth = 0
+        
+        let path1 : String = Bundle.main.path(forResource: "InfiniteSpace", ofType: "gif")!
+        let url = URL(fileURLWithPath: path1)
+        do {
+            let gifData = try Data(contentsOf: url)
+            let imageData1 = try? FLAnimatedImage(animatedGIFData: gifData) 
+            LogoGif.animatedImage = imageData1 as? FLAnimatedImage
+        } catch {
+            print(error)
+        }
         
         // Do any additional setup after loading the view.
     }
+    
+    
     
     @IBAction func onLeaderboardButton(_ sender: Any) {
         self.performSegue(withIdentifier: "LeaderboardPush", sender: self)
@@ -37,13 +49,4 @@ class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "SettingsPush", sender: self)
     }
 }
-/*
-extension UIImage {
-    public class func gif(asset: String) -> UIImage? {
-        if let asset = NSDataAsset(name: asset) {
-            return UIImage.gif(asset: asset.data)
-        }
-        return nil
-    }
-}
-*/
+
