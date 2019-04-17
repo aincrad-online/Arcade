@@ -7,6 +7,7 @@ target 'Infinite-Space' do
 
   pod 'AlamofireImage'
   pod 'Parse'
+  pod 'FLAnimatedImage'
 
   # Pods for Infinite-Space
 

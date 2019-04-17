@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "SettingsPush", sender: self)
     }
 }
-/*
+
 extension UIImage {
     public class func gif(asset: String) -> UIImage? {
         if let asset = NSDataAsset(name: asset) {
@@ -46,4 +46,3 @@ extension UIImage {
         return nil
     }
 }
-*/
