@@ -19,6 +19,9 @@
 		2C8B6464225AAE27002C4010 /* Infinite_SpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6463225AAE27002C4010 /* Infinite_SpaceTests.swift */; };
 		2C8B646F225AAE27002C4010 /* Infinite_SpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */; };
 		4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */; };
+		B1EC91792266AD480019970D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC91782266AD480019970D /* HomeViewController.swift */; };
+		B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC917A2266AD5B0019970D /* SettingsViewController.swift */; };
+		B1EC91812266AE3F0019970D /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */; };
 		BEF348F83D8CB097804DC82B /* Pods_Infinite_SpaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76ECE1FBF8D0A800149B7C6 /* Pods_Infinite_SpaceTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		2C8B6470225AAE27002C4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceUITests/Pods-Infinite-SpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.debug.xcconfig"; sourceTree = "<group>"; };
+		B1EC91782266AD480019970D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B1EC917A2266AD5B0019970D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
 		B76ECE1FBF8D0A800149B7C6 /* Pods_Infinite_SpaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_SpaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2112AF2EAF76D2A978A4999 /* Pods-Infinite-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.release.xcconfig"; sourceTree = "<group>"; };
 		D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_SpaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,9 +132,12 @@
 				2C8B644E225AAE27002C4010 /* GameScene.swift */,
 				2C8B6450225AAE27002C4010 /* GameViewController.swift */,
 				2C8B6452225AAE27002C4010 /* Main.storyboard */,
+				B1EC91782266AD480019970D /* HomeViewController.swift */,
+				B1EC917A2266AD5B0019970D /* SettingsViewController.swift */,
 				2C8B6455225AAE27002C4010 /* Assets.xcassets */,
 				2C8B6457225AAE27002C4010 /* LaunchScreen.storyboard */,
 				2C8B645A225AAE27002C4010 /* Info.plist */,
+				B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */,
 			);
 			path = "Infinite-Space";
 			sourceTree = "<group>";
@@ -411,6 +420,9 @@
 				2C8B644F225AAE27002C4010 /* GameScene.swift in Sources */,
 				2C8B6451225AAE27002C4010 /* GameViewController.swift in Sources */,
 				2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */,
+				B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */,
+				B1EC91792266AD480019970D /* HomeViewController.swift in Sources */,
+				B1EC91812266AE3F0019970D /* LeaderboardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

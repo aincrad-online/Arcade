@@ -45,7 +45,7 @@
         <!--Settings-->
         <scene sceneID="RsX-th-lHk">
             <objects>
-                <viewController id="5Mb-Yy-Zux" sceneMemberID="viewController">
+                <viewController id="5Mb-Yy-Zux" customClass="SettingsViewController" customModule="Infinite_Space" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pur-8x-Z7t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="-1706" y="798"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="u5z-DJ-F0w">
             <objects>
-                <viewController id="7xp-OL-qhM" sceneMemberID="viewController">
+                <viewController id="7xp-OL-qhM" customClass="HomeViewController" customModule="Infinite_Space" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ciw-Ia-XwJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,7 @@
         <!--Leaderboard-->
         <scene sceneID="YWQ-rC-hg2">
             <objects>
-                <tableViewController id="YJM-2H-5Qe" sceneMemberID="viewController">
+                <tableViewController id="YJM-2H-5Qe" customClass="LeaderboardTableViewController" customModule="Infinite_Space" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qLQ-tJ-7zU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
