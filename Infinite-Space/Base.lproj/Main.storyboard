@@ -98,7 +98,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mYO-Jy-fsa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="jYK-Oe-zex"/>
+                    <navigationItem key="navigationItem" title="Settings" id="jYK-Oe-zex">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="pJY-G2-ZiG">
+                            <connections>
+                                <action selector="onBackButton:" destination="5Mb-Yy-Zux" id="tAe-6k-aq4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YRq-xm-QHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,6 +151,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSettingsButton:" destination="7xp-OL-qhM" eventType="touchUpInside" id="YTX-ZL-9o5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jX1-CP-7PA">
                                 <rect key="frame" x="111" y="421" width="153" height="30"/>
@@ -162,6 +171,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onLeaderboardButton:" destination="7xp-OL-qhM" eventType="touchUpInside" id="132-Et-uhY"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Infinite Space" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmX-VQ-rZu">
                                 <rect key="frame" x="111" y="120" width="153" height="40"/>
@@ -262,7 +274,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Leaderboard" id="Lq8-W6-njY">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="TRR-Fw-alm"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="TRR-Fw-alm">
+                            <connections>
+                                <action selector="onBackButton:" destination="YJM-2H-5Qe" id="V1d-8y-O6E"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hH0-VL-rvB" userLabel="First Responder" sceneMemberID="firstResponder"/>

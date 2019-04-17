@@ -16,7 +16,15 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onLeaderboardButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "LeaderboardPush", sender: self)
+        
+    }
+    
 
+    @IBAction func onSettingsButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "SettingsPush", sender: self)
+    }
     /*
     // MARK: - Navigation
 
