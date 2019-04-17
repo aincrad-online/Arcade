@@ -128,9 +128,6 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="presentation" id="uUv-uB-zfE"/>
-                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10j-ha-ZVa">
                                 <rect key="frame" x="111" y="516" width="153" height="30"/>
@@ -148,9 +145,6 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="NUF-Kj-9eP" kind="presentation" id="vJE-eq-J8l"/>
-                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jX1-CP-7PA">
                                 <rect key="frame" x="111" y="421" width="153" height="30"/>
@@ -168,9 +162,6 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="4hS-kI-TVL" kind="presentation" id="m1a-Ex-sE8"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Infinite Space" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmX-VQ-rZu">
                                 <rect key="frame" x="111" y="120" width="153" height="40"/>
@@ -194,10 +185,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p9n-2a-bW3"/>
                     </view>
+                    <connections>
+                        <segue destination="NUF-Kj-9eP" kind="show" id="cx7-Ui-bk6"/>
+                        <segue destination="4hS-kI-TVL" kind="show" id="UY0-hL-sLV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VkU-Bs-AjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="27"/>
+            <point key="canvasLocation" x="-706" y="23"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="YWQ-rC-hg2">
