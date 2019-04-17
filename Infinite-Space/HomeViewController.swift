@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var PlayButton: UIButton!
@@ -35,14 +36,14 @@ class HomeViewController: UIViewController {
     @IBAction func onSettingsButton(_ sender: Any) {
         self.performSegue(withIdentifier: "SettingsPush", sender: self)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+/*
+extension UIImage {
+    public class func gif(asset: String) -> UIImage? {
+        if let asset = NSDataAsset(name: asset) {
+            return UIImage.gif(asset: asset.data)
+        }
+        return nil
+    }
+}
+*/
