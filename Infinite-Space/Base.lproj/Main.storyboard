@@ -186,8 +186,8 @@
                         <viewLayoutGuide key="safeArea" id="p9n-2a-bW3"/>
                     </view>
                     <connections>
-                        <segue destination="NUF-Kj-9eP" kind="show" id="cx7-Ui-bk6"/>
-                        <segue destination="4hS-kI-TVL" kind="show" id="UY0-hL-sLV"/>
+                        <segue destination="NUF-Kj-9eP" kind="show" identifier="SettingsPush" id="cx7-Ui-bk6"/>
+                        <segue destination="4hS-kI-TVL" kind="show" identifier="LeaderboardPush" id="UY0-hL-sLV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VkU-Bs-AjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,7 +283,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEm-P9-fjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="167" y="798"/>
+            <point key="canvasLocation" x="204" y="798"/>
         </scene>
     </scenes>
 </document>
