@@ -113,3 +113,6 @@ Unit 8: Group Milestone
 ## Video Walkthrough of Progress from Sprint 1
 <img src='https://i.imgur.com/miDceT8.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+## Video Walkthrough of Progress from Sprint 2
+<img src='http://g.recordit.co/bn7nvIYNQL.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough' />
+
