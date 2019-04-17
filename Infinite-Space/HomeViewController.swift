@@ -10,9 +10,19 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var PlayButton: UIButton!
+    @IBOutlet weak var LeaderboardButton: UIButton!
+    @IBOutlet weak var SettingsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        PlayButton.layer.cornerRadius = 15
+        PlayButton.layer.borderWidth = 1
+        LeaderboardButton.layer.cornerRadius = 15
+        LeaderboardButton.layer.borderWidth = 1
+        SettingsButton.layer.cornerRadius = 15
+        SettingsButton.layer.borderWidth = 1
+        
         // Do any additional setup after loading the view.
     }
     

@@ -10,8 +10,11 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var ResetStatsButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        ResetStatsButton.layer.cornerRadius = 15
+        ResetStatsButton.layer.borderWidth = 1
 
         // Do any additional setup after loading the view.
     }

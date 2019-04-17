@@ -88,11 +88,6 @@
                                 <state key="normal" title="Reset Stats">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,6 +100,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ResetStatsButton" destination="mwX-Tj-G8e" id="b96-c5-Y4i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YRq-xm-QHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,11 +127,6 @@
                                 <state key="normal" title="Play">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10j-ha-ZVa">
                                 <rect key="frame" x="111" y="516" width="153" height="30"/>
@@ -146,11 +139,6 @@
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onSettingsButton:" destination="7xp-OL-qhM" eventType="touchUpInside" id="YTX-ZL-9o5"/>
                                 </connections>
@@ -166,11 +154,6 @@
                                 <state key="normal" title="Leaderboard">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onLeaderboardButton:" destination="7xp-OL-qhM" eventType="touchUpInside" id="132-Et-uhY"/>
                                 </connections>
@@ -198,6 +181,9 @@
                         <viewLayoutGuide key="safeArea" id="p9n-2a-bW3"/>
                     </view>
                     <connections>
+                        <outlet property="LeaderboardButton" destination="jX1-CP-7PA" id="dBt-cM-43g"/>
+                        <outlet property="PlayButton" destination="AkB-Ii-vgK" id="fVy-Fc-37e"/>
+                        <outlet property="SettingsButton" destination="10j-ha-ZVa" id="2OS-vh-z38"/>
                         <segue destination="NUF-Kj-9eP" kind="show" identifier="SettingsPush" id="cx7-Ui-bk6"/>
                         <segue destination="4hS-kI-TVL" kind="show" identifier="LeaderboardPush" id="UY0-hL-sLV"/>
                     </connections>
