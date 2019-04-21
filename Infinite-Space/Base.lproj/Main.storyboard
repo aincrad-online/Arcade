@@ -212,6 +212,7 @@
                         <outlet property="LogoGif" destination="Fkm-gp-0g9" id="Dci-8B-RWB"/>
                         <outlet property="PlayButton" destination="AkB-Ii-vgK" id="fVy-Fc-37e"/>
                         <outlet property="SettingsButton" destination="10j-ha-ZVa" id="2OS-vh-z38"/>
+                        <outlet property="backgroundImage" destination="fj2-rS-LBi" id="pLF-oE-Odb"/>
                         <segue destination="NUF-Kj-9eP" kind="show" identifier="SettingsPush" id="cx7-Ui-bk6"/>
                         <segue destination="4hS-kI-TVL" kind="show" identifier="LeaderboardPush" id="UY0-hL-sLV"/>
                     </connections>
