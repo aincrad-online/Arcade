@@ -16,6 +16,10 @@ class GameScene: SKScene {
     var fireRate = 1.0
     var canFireBullet = false
     
+    let gameArea = CGRect()
+    
+
+    
     override func didMove(to view: SKView) {
         
         player = self.childNode(withName: "Player") as! SKSpriteNode
@@ -71,6 +75,10 @@ class GameScene: SKScene {
         if(currentTime > nextBullet && canFireBullet){
             nextBullet = currentTime + fireRate
             fireBullet()
+        }
+        
+        if(player.position.x > self.frame.width){
+            player.position.x = self.frame.width
         }
     }
 }
