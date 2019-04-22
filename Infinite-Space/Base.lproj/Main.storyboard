@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Custom Nav Controller-->
         <scene sceneID="34m-vg-AmW">
             <objects>
-                <navigationController id="NUF-Kj-9eP" sceneMemberID="viewController">
+                <navigationController id="NUF-Kj-9eP" customClass="CustomNavController" customModule="Infinite_Space" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ACB-Z5-yge"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Lm-LO-CN8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -58,12 +58,18 @@
                                 <rect key="frame" x="16" y="151" width="50" height="53"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="uml-BX-JZt"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sound FX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-kA-CfC">
                                 <rect key="frame" x="74" y="151" width="89" height="24"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -77,9 +83,15 @@
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicNote" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-kx-arB">
                                 <rect key="frame" x="16" y="284" width="50" height="53"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
                             </imageView>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Music" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-XO-EaL">
                                 <rect key="frame" x="74" y="284" width="57" height="24"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -122,7 +134,8 @@
                         <viewLayoutGuide key="safeArea" id="mYO-Jy-fsa"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="jYK-Oe-zex">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="pJY-G2-ZiG">
+                        <barButtonItem key="backBarButtonItem" title=" " id="huN-bm-aQj"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Icon-Back" id="pJY-G2-ZiG">
                             <connections>
                                 <action selector="onBackButton:" destination="5Mb-Yy-Zux" id="tAe-6k-aq4"/>
                             </connections>
@@ -301,7 +314,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Leaderboard" id="Lq8-W6-njY">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="TRR-Fw-alm">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Icon-Back" style="plain" id="TRR-Fw-alm">
                             <connections>
                                 <action selector="onBackButton:" destination="YJM-2H-5Qe" id="V1d-8y-O6E"/>
                             </connections>
@@ -330,6 +343,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Icon-Back" width="13" height="21"/>
         <image name="Space_Background" width="1920" height="1200"/>
         <image name="musicNote" width="377" height="1017"/>
         <image name="volume" width="1024" height="1024"/>
