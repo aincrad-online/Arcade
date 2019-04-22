@@ -16,30 +16,22 @@ class GameScene: SKScene {
     var fireRate = 1.0
     var canFireBullet = false
     
-    var gameArea = CGRect()
+    var nextRock = 1.0
+    var spawnRate = 0.25
+    var canSpawnRocks = true
+    
+    var border = SKPhysicsBody()
     
 
-    override init(size: CGSize) {
-        
-        let maxAspect: CGFloat = 16.0/9.0
-        let playableWidth = size.height / maxAspect
-        let margin = (size.width - playableWidth)/2
-        
-        gameArea = CGRect(x: margin, y: 0, width: playableWidth, height: size.height)
-        
-        super.init(size: size)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+
     
     override func didMove(to view: SKView) {
         
         player = self.childNode(withName: "Player") as! SKSpriteNode
- 
         
+        border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
+ 
+
     }
     
     func fireBullet(){
@@ -60,9 +52,9 @@ class GameScene: SKScene {
     
     func spawnRocks(){
         
-        let randomStart = random(min: 0.0, max: self.frame.width)
+        let randomStart = random(min: -(self.frame.width/2), max: (self.frame.width/2))
         let startPoint = CGPoint(x: randomStart, y: self.size.height * 1.2)
-        let endPoint = CGPoint(x: startPoint.x, y: -self.size.height*0.2)
+        let endPoint = CGPoint(x: startPoint.x, y: -((self.size.height/2) * 1.2))
         
         let rock = SKSpriteNode(imageNamed: "Bullet")
         rock.setScale(0.25)
@@ -119,8 +111,14 @@ class GameScene: SKScene {
         if(currentTime > nextBullet && canFireBullet){
             nextBullet = currentTime + fireRate
             fireBullet()
+        }
+        
+        if(currentTime > nextRock && canSpawnRocks){
+            nextRock = currentTime + spawnRate
             spawnRocks()
         }
+        
+        
         
         
     }
