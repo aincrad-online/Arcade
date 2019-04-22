@@ -25,7 +25,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JwE-sg-G21" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3146" y="797"/>
+            <point key="canvasLocation" x="-3158" y="825"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-706" y="825"/>
+            <point key="canvasLocation" x="-706" y="824"/>
         </scene>
         <!--Settings-->
         <scene sceneID="RsX-th-lHk">
@@ -75,7 +75,7 @@
                                     <constraint firstAttribute="height" constant="29" id="rQi-pF-Zpc"/>
                                 </constraints>
                             </slider>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicNote" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-kx-arB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicNote" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-kx-arB">
                                 <rect key="frame" x="16" y="284" width="50" height="53"/>
                             </imageView>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Music" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-XO-EaL">
@@ -89,10 +89,11 @@
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwX-Tj-G8e">
                                 <rect key="frame" x="74" y="448" width="206" height="36"/>
-                                <color key="backgroundColor" red="0.21845921870000001" green="0.62778681520000001" blue="0.95119148490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Reset Stats">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
@@ -129,11 +130,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ResetStatsButton" destination="mwX-Tj-G8e" id="b96-c5-Y4i"/>
+                        <outlet property="backgroundImage" destination="3nJ-uP-S8V" id="bmg-Aj-xSY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YRq-xm-QHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2309.5999999999999" y="796.55172413793105"/>
+            <point key="canvasLocation" x="-2300" y="825"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="u5z-DJ-F0w">
@@ -324,12 +326,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEm-P9-fjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="827"/>
+            <point key="canvasLocation" x="366" y="825"/>
         </scene>
     </scenes>
     <resources>
         <image name="Space_Background" width="1920" height="1200"/>
-        <image name="musicNote" width="720" height="720"/>
+        <image name="musicNote" width="377" height="1017"/>
         <image name="volume" width="1024" height="1024"/>
     </resources>
 </document>

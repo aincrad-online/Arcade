@@ -9,13 +9,16 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var ResetStatsButton: UIButton!
+    var backgroundStartPosition = CGAffineTransform()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        ResetStatsButton.layer.cornerRadius = 15
-        ResetStatsButton.layer.borderWidth = 1
-
+        backgroundStartPosition = backgroundImage.transform
+        ResetStatsButton.layer.borderWidth = 0
+        animateBackground()
         // Do any additional setup after loading the view.
     }
     
@@ -23,14 +26,17 @@ class SettingsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        backgroundImage.transform = backgroundStartPosition
+        animateBackground()
+        
     }
-    */
+    
+    func animateBackground(){
+        UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
+            let x = -(self.backgroundImage.frame.width - self.view.frame.width)
+            self.backgroundImage.transform = CGAffineTransform(translationX: x, y: 0)
+        }, completion: nil)
+    }
 
 }
