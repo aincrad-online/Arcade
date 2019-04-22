@@ -11,6 +11,7 @@ import FLAnimatedImage
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var PlayButton: UIButton!
     @IBOutlet weak var LeaderboardButton: UIButton!
     @IBOutlet weak var SettingsButton: UIButton!
@@ -33,11 +34,16 @@ class HomeViewController: UIViewController {
         } catch {
             print(error)
         }
-        
+        animateBackground()
         // Do any additional setup after loading the view.
     }
     
-    
+    func animateBackground(){
+        UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
+            let x = -(self.backgroundImage.frame.width - self.view.frame.width)
+            self.backgroundImage.transform = CGAffineTransform(translationX: x, y: 0)
+        }, completion: nil)
+    }
     
     @IBAction func onLeaderboardButton(_ sender: Any) {
         self.performSegue(withIdentifier: "LeaderboardPush", sender: self)

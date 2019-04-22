@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7xp-OL-qhM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -212,6 +212,7 @@
                         <outlet property="LogoGif" destination="Fkm-gp-0g9" id="Dci-8B-RWB"/>
                         <outlet property="PlayButton" destination="AkB-Ii-vgK" id="fVy-Fc-37e"/>
                         <outlet property="SettingsButton" destination="10j-ha-ZVa" id="2OS-vh-z38"/>
+                        <outlet property="backgroundImage" destination="fj2-rS-LBi" id="pLF-oE-Odb"/>
                         <segue destination="NUF-Kj-9eP" kind="show" identifier="SettingsPush" id="cx7-Ui-bk6"/>
                         <segue destination="4hS-kI-TVL" kind="show" identifier="LeaderboardPush" id="UY0-hL-sLV"/>
                     </connections>
