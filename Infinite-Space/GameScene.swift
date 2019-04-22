@@ -12,7 +12,9 @@ import GameplayKit
 class GameScene: SKScene {
     
     var player = SKSpriteNode()
-    
+    var nextBullet = 0.0
+    var fireRate = 1.0
+    var canFireBullet = false
     
     override func didMove(to view: SKView) {
         
@@ -23,11 +25,22 @@ class GameScene: SKScene {
     
     func fireBullet(){
         
-        //let bullet = SKSpriteNode
+        let bullet = SKSpriteNode(imageNamed: "Bullet")
+        bullet.setScale(0.25)
+        bullet.position = player.position
+        bullet.zPosition = 1
+        self.addChild(bullet)
+        
+        let moveBullet = SKAction.moveTo(y: self.size.height + bullet.size.height, duration: 1)
+        let destroyBullet = SKAction.removeFromParent()
+        
+        let bulletSequence = SKAction.sequence([moveBullet, destroyBullet])
+        
+        bullet.run(bulletSequence)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        canFireBullet = true
         for touch in touches{
             let location = touch.location(in: self)
             
@@ -39,6 +52,7 @@ class GameScene: SKScene {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+       canFireBullet = true
         for touch in touches{
             let location = touch.location(in: self)
             
@@ -47,8 +61,16 @@ class GameScene: SKScene {
         }
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        canFireBullet = false
+    }
+    
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        if(currentTime > nextBullet && canFireBullet){
+            nextBullet = currentTime + fireRate
+            fireBullet()
+        }
     }
 }
