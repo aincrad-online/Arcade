@@ -8,6 +8,7 @@
 
 import UIKit
 import FLAnimatedImage
+import AVFoundation
 
 class HomeViewController: UIViewController {
 
@@ -15,7 +16,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var PlayButton: UIButton!
     @IBOutlet weak var LeaderboardButton: UIButton!
     @IBOutlet weak var SettingsButton: UIButton!
+    
     var backgroundStartPosition = CGAffineTransform()
+    var audioPlayer: AVAudioPlayer?
     
     @IBOutlet weak var LogoGif: FLAnimatedImageView!
     
@@ -37,6 +40,17 @@ class HomeViewController: UIViewController {
             print(error)
         }
         
+        do {
+            if let fileURL = Bundle.main.path(forResource: "HomePageAudio", ofType: "mp3") {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+            } else {
+                print("No file with specified name exists")
+            }
+        } catch let error {
+            print("Can't play the audio file failed with an error \(error.localizedDescription)")
+        }
+        
+        audioPlayer?.play()
         animateBackground()
         // Do any additional setup after loading the view.
     }

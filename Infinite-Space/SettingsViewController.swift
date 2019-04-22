@@ -10,6 +10,7 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet weak var musicSlider: UISlider!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var ResetStatsButton: UIButton!
     var backgroundStartPosition = CGAffineTransform()

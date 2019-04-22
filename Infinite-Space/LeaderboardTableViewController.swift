@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import FLAnimatedImage
 
 class LeaderboardTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundView = UIImageView(image: UIImage(named: "spaceNebula.png"))
-        
     }
 
     // MARK: - Table view data source
