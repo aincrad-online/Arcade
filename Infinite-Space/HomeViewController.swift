@@ -34,10 +34,20 @@ class HomeViewController: UIViewController {
         } catch {
             print(error)
         }
+        
         animateBackground()
         // Do any additional setup after loading the view.
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
+            let x = -(self.backgroundImage.frame.width - self.view.frame.width)
+            self.backgroundImage.transform = CGAffineTransform(translationX: x, y: 0)
+        }, completion: nil)
+        
+    }
+
     func animateBackground(){
         UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
             let x = -(self.backgroundImage.frame.width - self.view.frame.width)
