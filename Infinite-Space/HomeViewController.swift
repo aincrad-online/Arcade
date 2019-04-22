@@ -64,5 +64,10 @@ class HomeViewController: UIViewController {
     @IBAction func onSettingsButton(_ sender: Any) {
         self.performSegue(withIdentifier: "SettingsPush", sender: self)
     }
+    
+    
+    @IBAction func onPlayButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "GamePush", sender: self)
+    }
 }
 
