@@ -9,5 +9,14 @@
 import UIKit
 
 class CustomNavController: UINavigationController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = true
+        //navigationBar.tintColor = .white
+        
+    }
 
 }
