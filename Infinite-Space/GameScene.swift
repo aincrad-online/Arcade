@@ -18,6 +18,7 @@ class GameScene: SKScene {
     
     var nextRock = 1.0
     var spawnRate = 0.25
+    var fallRate = 2.0
     var canSpawnRocks = true
     
     var border = SKPhysicsBody()
@@ -62,7 +63,7 @@ class GameScene: SKScene {
         rock.zPosition = 2
         self.addChild(rock)
         
-        let rockFall = SKAction.moveTo(y: endPoint.y, duration: 1.5)
+        let rockFall = SKAction.moveTo(y: endPoint.y, duration: 2.0)
         let deleteRock = SKAction.removeFromParent()
         
         let rockSequence = SKAction.sequence([rockFall, deleteRock])
