@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7xp-OL-qhM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -50,14 +50,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-5w-VaN">
-                                <rect key="frame" x="16" y="145" width="50" height="53"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volume" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-5w-VaN">
+                                <rect key="frame" x="16" y="151" width="50" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="uml-BX-JZt"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sound FX" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-kA-CfC">
-                                <rect key="frame" x="74" y="145" width="106" height="30"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sound FX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeS-kA-CfC">
+                                <rect key="frame" x="74" y="151" width="89" height="24"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -69,11 +69,11 @@
                                     <constraint firstAttribute="height" constant="29" id="rQi-pF-Zpc"/>
                                 </constraints>
                             </slider>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-kx-arB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="volume" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-kx-arB">
                                 <rect key="frame" x="16" y="284" width="50" height="53"/>
                             </imageView>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game Volume" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-XO-EaL">
-                                <rect key="frame" x="74" y="284" width="143" height="30"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Music" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-XO-EaL">
+                                <rect key="frame" x="74" y="284" width="57" height="24"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -106,7 +106,6 @@
                             <constraint firstItem="9CO-5w-VaN" firstAttribute="top" secondItem="PeS-kA-CfC" secondAttribute="top" id="Zzh-VU-kdo"/>
                             <constraint firstItem="mYO-Jy-fsa" firstAttribute="bottom" secondItem="xDz-kx-arB" secondAttribute="bottom" constant="330" id="aQF-dh-NAS"/>
                             <constraint firstItem="Mgk-XO-EaL" firstAttribute="top" secondItem="mmv-zg-uZI" secondAttribute="bottom" constant="79" id="eaq-Gb-yQN"/>
-                            <constraint firstItem="xDz-kx-arB" firstAttribute="top" secondItem="9CO-5w-VaN" secondAttribute="bottom" constant="86" id="hgK-si-fT8"/>
                             <constraint firstItem="9CO-5w-VaN" firstAttribute="trailing" secondItem="xDz-kx-arB" secondAttribute="trailing" id="laC-TX-hhU"/>
                             <constraint firstItem="9CO-5w-VaN" firstAttribute="leading" secondItem="pur-8x-Z7t" secondAttribute="leadingMargin" id="op4-pf-5uE"/>
                             <constraint firstItem="mwX-Tj-G8e" firstAttribute="trailing" secondItem="M8E-S0-ehw" secondAttribute="trailing" id="sPK-pT-SAz"/>
@@ -127,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YRq-xm-QHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1706" y="798"/>
+            <point key="canvasLocation" x="-1706.4000000000001" y="797.45127436281871"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="u5z-DJ-F0w">
@@ -319,5 +318,6 @@
     </scenes>
     <resources>
         <image name="Space_Background" width="1920" height="1200"/>
+        <image name="volume" width="1024" height="1024"/>
     </resources>
 </document>
