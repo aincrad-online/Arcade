@@ -15,12 +15,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var PlayButton: UIButton!
     @IBOutlet weak var LeaderboardButton: UIButton!
     @IBOutlet weak var SettingsButton: UIButton!
-    
+    var backgroundStartPosition = CGAffineTransform()
     
     @IBOutlet weak var LogoGif: FLAnimatedImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundStartPosition = backgroundImage.transform
+        
         PlayButton.layer.borderWidth = 0
         LeaderboardButton.layer.borderWidth = 0
         SettingsButton.layer.borderWidth = 0
@@ -41,10 +43,8 @@ class HomeViewController: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
-            let x = -(self.backgroundImage.frame.width - self.view.frame.width)
-            self.backgroundImage.transform = CGAffineTransform(translationX: x, y: 0)
-        }, completion: nil)
+        backgroundImage.transform = backgroundStartPosition
+        animateBackground()
         
     }
 
