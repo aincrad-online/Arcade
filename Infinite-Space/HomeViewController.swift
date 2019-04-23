@@ -11,6 +11,8 @@ import FLAnimatedImage
 import AVFoundation
 
 class HomeViewController: UIViewController {
+    
+    static let shared: HomeViewController = HomeViewController()
 
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var PlayButton: UIButton!
@@ -18,12 +20,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var SettingsButton: UIButton!
     
     var backgroundStartPosition = CGAffineTransform()
-    var audioPlayer: AVAudioPlayer?
+    public static var audioPlayer: AVAudioPlayer?
     var InGame = false
     
     
     @IBOutlet weak var LogoGif: FLAnimatedImageView!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundStartPosition = backgroundImage.transform
@@ -62,7 +65,7 @@ class HomeViewController: UIViewController {
         if(InGame || start){
             do {
                 if let fileURL = Bundle.main.path(forResource: "HomePageAudio", ofType: "mp3") {
-                    audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+                    HomeViewController.audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
                 } else {
                     print("No file with specified name exists")
                 }
@@ -70,7 +73,7 @@ class HomeViewController: UIViewController {
                 print("Can't play the audio file failed with an error \(error.localizedDescription)")
         }
             
-            audioPlayer?.play()
+            HomeViewController.audioPlayer?.play()
             
     }
 }
@@ -96,7 +99,7 @@ class HomeViewController: UIViewController {
     @IBAction func onPlayButton(_ sender: Any) {
         self.performSegue(withIdentifier: "GamePush", sender: self)
         InGame = true
-        audioPlayer?.stop()
+        HomeViewController.audioPlayer?.stop()
     }
 }
 

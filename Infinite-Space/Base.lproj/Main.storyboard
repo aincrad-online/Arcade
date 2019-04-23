@@ -108,6 +108,9 @@
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="M8E-S0-ehw">
                                 <rect key="frame" x="74" y="321" width="208" height="31"/>
+                                <connections>
+                                    <action selector="onMusicSlider:" destination="5Mb-Yy-Zux" eventType="valueChanged" id="vxs-dI-Vuw"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwX-Tj-G8e">
                                 <rect key="frame" x="74" y="448" width="206" height="36"/>

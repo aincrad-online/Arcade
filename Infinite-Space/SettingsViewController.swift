@@ -36,10 +36,12 @@ class SettingsViewController: UIViewController {
         
     }
     
-    @IBAction func onMusicVolumeChanged(_ sender: Any) {
-        
-        home.audioPlayer?.setVolume(musicSlider.value, fadeDuration: 0.1)
+    
+    @IBAction func onMusicSlider(_ sender: UISlider) {
+        HomeViewController.audioPlayer?.setVolume(musicSlider.value, fadeDuration: 0.5)
     }
+    
+    
     func animateBackground(){
         UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
             let x = -(self.backgroundImage.frame.width - self.view.frame.width)
