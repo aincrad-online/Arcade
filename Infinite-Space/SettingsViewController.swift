@@ -13,6 +13,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var musicSlider: UISlider!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var ResetStatsButton: UIButton!
+    
+    let home = HomeViewController()
     var backgroundStartPosition = CGAffineTransform()
     
     override func viewDidLoad() {
@@ -20,6 +22,7 @@ class SettingsViewController: UIViewController {
         backgroundStartPosition = backgroundImage.transform
         ResetStatsButton.layer.borderWidth = 0
         animateBackground()
+        //musicSlider.value
         // Do any additional setup after loading the view.
     }
     
@@ -33,6 +36,10 @@ class SettingsViewController: UIViewController {
         
     }
     
+    @IBAction func onMusicVolumeChanged(_ sender: Any) {
+        
+        home.audioPlayer?.setVolume(musicSlider.value, fadeDuration: 0.1)
+    }
     func animateBackground(){
         UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
             let x = -(self.backgroundImage.frame.width - self.view.frame.width)

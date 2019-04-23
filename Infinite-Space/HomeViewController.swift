@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
     var audioPlayer: AVAudioPlayer?
     var InGame = false
     
+    
     @IBOutlet weak var LogoGif: FLAnimatedImageView!
     
     override func viewDidLoad() {
@@ -70,6 +71,7 @@ class HomeViewController: UIViewController {
         }
             
             audioPlayer?.play()
+            
     }
 }
 
