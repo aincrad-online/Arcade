@@ -18,7 +18,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var SettingsButton: UIButton!
     
     var backgroundStartPosition = CGAffineTransform()
-    var mainAudioPlayer: AVAudioPlayer?
+    var audioPlayer: AVAudioPlayer?
+    var InGame = false
+    
     
     @IBOutlet weak var LogoGif: FLAnimatedImageView!
     
@@ -40,18 +42,9 @@ class HomeViewController: UIViewController {
             print(error)
         }
         
-        do {
-            if let fileURL = Bundle.main.path(forResource: "HomePageAudio", ofType: "mp3") {
-                mainAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
-            } else {
-                print("No file with specified name exists")
-            }
-        } catch let error {
-            print("Can't play the audio file failed with an error \(error.localizedDescription)")
-        }
         
-        mainAudioPlayer?.play()
-        mainAudioPlayer?.numberOfLoops = -1
+        
+        playMusic(start: true)
         animateBackground()
         // Do any additional setup after loading the view.
     }
@@ -60,8 +53,27 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         backgroundImage.transform = backgroundStartPosition
         animateBackground()
+        playMusic(start: false)
+        InGame = false
         
     }
+    
+    func playMusic(start: Bool){
+        if(InGame || start){
+            do {
+                if let fileURL = Bundle.main.path(forResource: "HomePageAudio", ofType: "mp3") {
+                    audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+                } else {
+                    print("No file with specified name exists")
+                }
+            } catch let error {
+                print("Can't play the audio file failed with an error \(error.localizedDescription)")
+        }
+            
+            audioPlayer?.play()
+            
+    }
+}
 
     func animateBackground(){
         UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
@@ -83,6 +95,8 @@ class HomeViewController: UIViewController {
     
     @IBAction func onPlayButton(_ sender: Any) {
         self.performSegue(withIdentifier: "GamePush", sender: self)
+        InGame = true
+        audioPlayer?.stop()
     }
 }
 
