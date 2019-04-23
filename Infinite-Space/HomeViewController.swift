@@ -47,7 +47,7 @@ class HomeViewController: UIViewController {
         
         
         
-        playMusic(start: true)
+        playMusic(start: true, song:"HomePageAudio")
         animateBackground()
         // Do any additional setup after loading the view.
     }
@@ -56,15 +56,15 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         backgroundImage.transform = backgroundStartPosition
         animateBackground()
-        playMusic(start: false)
+        playMusic(start: false, song:"HomePageAudio")
         InGame = false
         
     }
     
-    func playMusic(start: Bool){
+    func playMusic(start: Bool, song: String){
         if(InGame || start){
             do {
-                if let fileURL = Bundle.main.path(forResource: "HomePageAudio", ofType: "mp3") {
+                if let fileURL = Bundle.main.path(forResource: song, ofType: "mp3") {
                     HomeViewController.audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
                 } else {
                     print("No file with specified name exists")
@@ -100,6 +100,8 @@ class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "GamePush", sender: self)
         InGame = true
         HomeViewController.audioPlayer?.stop()
+        playMusic(start: false, song: "gameAudio")
+        HomeViewController.audioPlayer?.play()
     }
 }
 
