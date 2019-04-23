@@ -12,6 +12,8 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,9 +28,8 @@ class GameViewController: UIViewController {
             }
             
             view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
+            //view.showsFPS = true
+           // view.showsNodeCount = true
         }
     }
 

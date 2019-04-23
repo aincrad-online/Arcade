@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var SettingsButton: UIButton!
     
     var backgroundStartPosition = CGAffineTransform()
-    var audioPlayer: AVAudioPlayer?
+    var mainAudioPlayer: AVAudioPlayer?
     
     @IBOutlet weak var LogoGif: FLAnimatedImageView!
     
@@ -42,7 +42,7 @@ class HomeViewController: UIViewController {
         
         do {
             if let fileURL = Bundle.main.path(forResource: "HomePageAudio", ofType: "mp3") {
-                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+                mainAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
             } else {
                 print("No file with specified name exists")
             }
@@ -50,7 +50,8 @@ class HomeViewController: UIViewController {
             print("Can't play the audio file failed with an error \(error.localizedDescription)")
         }
         
-        audioPlayer?.play()
+        mainAudioPlayer?.play()
+        mainAudioPlayer?.numberOfLoops = -1
         animateBackground()
         // Do any additional setup after loading the view.
     }
