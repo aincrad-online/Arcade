@@ -12,6 +12,8 @@ import GameplayKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
 
 
+    var score = 0
+    
     var player = SKSpriteNode()
     var nextBullet = 0.0
     var fireRate = 1.0
@@ -36,10 +38,69 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.contactDelegate = self
         
         player = self.childNode(withName: "Player") as! SKSpriteNode
+        player.physicsBody?.categoryBitMask = physicsCategories.Player
+        player.physicsBody?.collisionBitMask = physicsCategories.None
+        player.physicsBody?.contactTestBitMask = physicsCategories.Rock
         
-        print(player.zPosition)
+        
         border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
         createStarLayers()
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        
+        var body1 = SKPhysicsBody()
+        var body2 = SKPhysicsBody()
+        
+        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask{
+            body1 = contact.bodyA
+            body2 = contact.bodyB
+        }
+        else{
+            body1 = contact.bodyB
+            body2 = contact.bodyA
+        }
+        
+        //player hits a rock
+        if body1.categoryBitMask == physicsCategories.Player && body2.categoryBitMask == physicsCategories.Rock{
+            
+            if body1.node != nil{
+            
+            spawnExplosion(spawnPosition: body1.node!.position)
+            }
+            
+            body1.node?.removeFromParent()
+            body2.node?.removeFromParent()
+        }
+        
+        //bullet hits a rock
+        if body1.categoryBitMask == physicsCategories.bullet && body2.categoryBitMask == physicsCategories.Rock{
+            
+            if body2.node != nil{
+            
+            spawnExplosion(spawnPosition: body2.node!.position)
+            }
+            
+            body1.node?.removeFromParent()
+            body2.node?.removeFromParent()
+        }
+        
+    }
+    
+    func spawnExplosion(spawnPosition: CGPoint){
+        let explosion = SKSpriteNode(imageNamed: "Explosion")
+        explosion.position = spawnPosition
+        explosion.zPosition = 3
+        explosion.setScale(0)
+        self.addChild(explosion)
+        
+        let scaleIn = SKAction.scale(to: 1.0, duration: 0.1)
+        let ScaleOut = SKAction.fadeOut(withDuration: 0.1)
+        let delete = SKAction.removeFromParent()
+        
+        let explosionSequence = SKAction.sequence([scaleIn, ScaleOut, delete])
+        
+        explosion.run(explosionSequence)
     }
     
     func fireBullet(){
@@ -52,6 +113,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bullet.physicsBody?.affectedByGravity = false
         bullet.physicsBody?.allowsRotation = false
         bullet.physicsBody?.linearDamping = CGFloat(0.0)
+        bullet.physicsBody?.categoryBitMask = physicsCategories.bullet
+        bullet.physicsBody?.collisionBitMask = physicsCategories.None
+        bullet.physicsBody?.contactTestBitMask = physicsCategories.Rock
+        
         
         self.addChild(bullet)
         
@@ -80,6 +145,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             rock = SKSpriteNode(imageNamed: "Astroid2")
         }
         
+        let colliderSize = CGSize(width: rock.size.width * 0.9, height: rock.size.height * 0.9)
+        
+        rock.physicsBody = SKPhysicsBody(rectangleOf: colliderSize)
+        rock.physicsBody?.affectedByGravity = false
+        rock.physicsBody?.allowsRotation = false
+        rock.physicsBody?.linearDamping = CGFloat(0.0)
+        rock.physicsBody?.categoryBitMask = physicsCategories.Rock
+        rock.physicsBody?.collisionBitMask = physicsCategories.None
+        rock.physicsBody?.contactTestBitMask = physicsCategories.Player | physicsCategories.bullet
         
         rock.setScale(0.25)
         rock.position = startPoint
