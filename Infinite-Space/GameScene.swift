@@ -24,6 +24,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var fallRate = 3.0
     var canSpawnRocks = true
     
+    var scoreLabel = SKLabelNode()
+    var nextScore = 1.0
+    var scoreRate = 1.0
+    var canScore = true
+    
+    
     var border = SKPhysicsBody()
     
     struct physicsCategories{
@@ -41,6 +47,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.physicsBody?.categoryBitMask = physicsCategories.Player
         player.physicsBody?.collisionBitMask = physicsCategories.None
         player.physicsBody?.contactTestBitMask = physicsCategories.Rock
+        
+        scoreLabel = self.childNode(withName: "ScoreLabel") as! SKLabelNode
+        
+        scoreLabel.text = "Score: \(score)"
         
         
         border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
@@ -170,6 +180,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         rock.run(rockSequence)
     }
     
+    func incrementScore(){
+        score += 1
+        scoreLabel.text = "Score: \(score)"
+    }
+    
+    
     func random() ->CGFloat{
         return CGFloat(Float(drand48()))
     }
@@ -217,6 +233,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             nextRock = currentTime + spawnRate
             spawnRocks()
         }
+        
+        if(currentTime > nextScore && canScore){
+            nextScore = currentTime + scoreRate
+            incrementScore()
+        }
+        
         
     }
     
