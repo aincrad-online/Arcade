@@ -75,6 +75,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         var body1 = SKPhysicsBody()
         var body2 = SKPhysicsBody()
         
+        
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask{
             body1 = contact.bodyA
             body2 = contact.bodyB
