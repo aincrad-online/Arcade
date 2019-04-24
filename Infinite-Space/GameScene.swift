@@ -20,7 +20,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var player = SKSpriteNode()
     var nextBullet = 0.0
-    var fireRate = 1.0
+    var fireRate = 0.5
     var canFireBullet = false
     
     var nextRock = 1.0
@@ -56,6 +56,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         
         GameScene.score = 0
+        GameScene.gotHighScore = false
         scoreLabel = self.childNode(withName: "ScoreLabel") as! SKLabelNode
         
         scoreLabel.text = "Score: \(GameScene.score)"
