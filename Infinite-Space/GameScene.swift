@@ -119,7 +119,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         explosion.setScale(0)
         self.addChild(explosion)
         
-        let scaleIn = SKAction.scale(to: 1.0, duration: 0.1)
+        let scaleIn = SKAction.scale(to: 0.25, duration: 0.1)
         let ScaleOut = SKAction.fadeOut(withDuration: 0.1)
         let delete = SKAction.removeFromParent()
         
