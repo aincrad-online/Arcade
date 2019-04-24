@@ -14,7 +14,7 @@ class SettingsViewController: UIViewController{
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var ResetStatsButton: UIButton!
     
-    public static var vol: Float!
+    public static var vol: Float = 0.5
     
     var backgroundStartPosition = CGAffineTransform()
     
@@ -24,6 +24,7 @@ class SettingsViewController: UIViewController{
         backgroundStartPosition = backgroundImage.transform
         ResetStatsButton.layer.borderWidth = 0
         animateBackground()
+        musicSlider.value = SettingsViewController.vol
         //musicSlider.value
         // Do any additional setup after loading the view.
     }
