@@ -8,14 +8,16 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController{
     
     @IBOutlet weak var musicSlider: UISlider!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var ResetStatsButton: UIButton!
     
-    let home = HomeViewController()
+    public static var vol: Float!
+    
     var backgroundStartPosition = CGAffineTransform()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,10 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func onBackButton(_ sender: Any) {
+        SettingsViewController.vol = musicSlider.value
+        print(SettingsViewController.vol)
         self.dismiss(animated: true, completion: nil)
+        SettingsViewController.vol = musicSlider.value
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -39,6 +44,11 @@ class SettingsViewController: UIViewController {
     
     @IBAction func onMusicSlider(_ sender: UISlider) {
         HomeViewController.audioPlayer?.setVolume(musicSlider.value, fadeDuration: 0.5)
+        //vol = musicSlider.value
+    }
+    
+    func getSliderValue() -> Float{
+        return SettingsViewController.vol
     }
     
     
@@ -48,5 +58,6 @@ class SettingsViewController: UIViewController {
             self.backgroundImage.transform = CGAffineTransform(translationX: x, y: 0)
         }, completion: nil)
     }
-
 }
+
+

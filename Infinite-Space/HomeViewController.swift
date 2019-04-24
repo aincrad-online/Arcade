@@ -13,7 +13,10 @@ import AVFoundation
 class HomeViewController: UIViewController {
     
     static let shared: HomeViewController = HomeViewController()
-
+    let settings = SettingsViewController()
+    
+    let defaults = UserDefaults.standard
+    
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var PlayButton: UIButton!
     @IBOutlet weak var LeaderboardButton: UIButton!
@@ -101,7 +104,9 @@ class HomeViewController: UIViewController {
         InGame = true
         HomeViewController.audioPlayer?.stop()
         playMusic(start: false, song: "gameAudio")
+        HomeViewController.audioPlayer?.setVolume(settings.getSliderValue(), fadeDuration: 0.5)
         HomeViewController.audioPlayer?.play()
+        print(settings.getSliderValue())
     }
 }
 
