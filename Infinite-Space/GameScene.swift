@@ -8,9 +8,9 @@
 
 import SpriteKit
 import GameplayKit
+import FLAnimatedImage
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
-
 
     static var score = 0
     static var gotHighScore = false
@@ -67,6 +67,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
         createStarLayers()
     }
+    
+    
     
     func didBegin(_ contact: SKPhysicsContact) {
         

@@ -9,10 +9,11 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import FLAnimatedImage
 
 class GameViewController: UIViewController {
 
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

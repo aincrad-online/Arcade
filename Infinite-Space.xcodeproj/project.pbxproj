@@ -24,6 +24,7 @@
 		B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */; };
 		B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6A226FF3270059A760 /* spaceEarth.gif */; };
 		B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6C227000510059A760 /* spaceBackground.gif */; };
+		B1CC0B6F227008BC0059A760 /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6E227008BC0059A760 /* space.jpg */; };
 		B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2B74F226E552400E6B177 /* CustomNavController.swift */; };
 		B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */; };
 		B1EC91792266AD480019970D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC91782266AD480019970D /* HomeViewController.swift */; };
@@ -77,6 +78,7 @@
 		B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameAudio.mp3; sourceTree = "<group>"; };
 		B1CC0B6A226FF3270059A760 /* spaceEarth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceEarth.gif; sourceTree = "<group>"; };
 		B1CC0B6C227000510059A760 /* spaceBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceBackground.gif; sourceTree = "<group>"; };
+		B1CC0B6E227008BC0059A760 /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
 		B1D2B74F226E552400E6B177 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HomePageAudio.mp3; sourceTree = "<group>"; };
 		B1EC91782266AD480019970D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				B1CC0B6C227000510059A760 /* spaceBackground.gif */,
 				B1CC0B6A226FF3270059A760 /* spaceEarth.gif */,
 				B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */,
+				B1CC0B6E227008BC0059A760 /* space.jpg */,
 				B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */,
 				2C8B6448225AAE27002C4010 /* AppDelegate.swift */,
 				2C8B644A225AAE27002C4010 /* GameScene.sks */,
@@ -319,6 +322,7 @@
 				2C8B6454225AAE27002C4010 /* Main.storyboard in Resources */,
 				2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */,
 				2C8B6456225AAE27002C4010 /* Assets.xcassets in Resources */,
+				B1CC0B6F227008BC0059A760 /* space.jpg in Resources */,
 				B1FCF1322267C45F00E22F3C /* InfiniteSpace.gif in Resources */,
 				B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */,
 				2C8B6459225AAE27002C4010 /* LaunchScreen.storyboard in Resources */,
