@@ -282,7 +282,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
-        if(currentTime > nextBullet && canFireBullet){
+        //shooting,scoring, and rock spawn is disabled on game over
+        if(currentTime > nextBullet && canFireBullet && canScore){
             nextBullet = currentTime + fireRate
             fireBullet()
         }
