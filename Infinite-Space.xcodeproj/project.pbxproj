@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2399AEA2593C86EB603BEBD1 /* Pods_Infinite_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */; };
+		2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */; };
+		2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CBEC4226FE06000B06727 /* GameOverScene.sks */; };
 		2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6448225AAE27002C4010 /* AppDelegate.swift */; };
 		2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B644A225AAE27002C4010 /* GameScene.sks */; };
 		2C8B644D225AAE27002C4010 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B644C225AAE27002C4010 /* Actions.sks */; };
@@ -51,6 +53,8 @@
 		0430C3DFF75994186DE7431D /* Pods-Infinite-SpaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceTests/Pods-Infinite-SpaceTests.release.xcconfig"; sourceTree = "<group>"; };
 		1FC2D2F846A27F19F7A258F7 /* Pods-Infinite-SpaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceTests/Pods-Infinite-SpaceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		2C0CBEC4226FE06000B06727 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 		2C8B6445225AAE27002C4010 /* Infinite-Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinite-Space.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8B6448225AAE27002C4010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8B644A225AAE27002C4010 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				2C8B645A225AAE27002C4010 /* Info.plist */,
 				B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */,
 				B1D2B74F226E552400E6B177 /* CustomNavController.swift */,
+				2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */,
+				2C0CBEC4226FE06000B06727 /* GameOverScene.sks */,
 			);
 			path = "Infinite-Space";
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 				2C8B6459225AAE27002C4010 /* LaunchScreen.storyboard in Resources */,
 				2C8B644D225AAE27002C4010 /* Actions.sks in Resources */,
 				B1D2B758226E632500E6B177 /* spaceNebula.png in Resources */,
+				2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */,
 				B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +447,7 @@
 			files = (
 				2C8B644F225AAE27002C4010 /* GameScene.swift in Sources */,
 				2C8B6451225AAE27002C4010 /* GameViewController.swift in Sources */,
+				2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */,
 				2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */,
 				B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */,
 				B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */,
