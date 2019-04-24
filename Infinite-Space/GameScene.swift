@@ -29,6 +29,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var scoreRate = 1.0
     var canScore = true
     
+    var gameEnded = false
+    
     
     var border = SKPhysicsBody()
     
@@ -79,6 +81,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             spawnExplosion(spawnPosition: body1.node!.position)
             }
             
+            gameOver()
             body1.node?.removeFromParent()
             body2.node?.removeFromParent()
         }
@@ -185,6 +188,33 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.text = "Score: \(score)"
     }
     
+    func gameOver(){
+        canSpawnRocks = false
+        canScore = false
+        canFireBullet = false
+        gameEnded = true
+        
+        
+        let sceneAction = SKAction.run(changeScene)
+        let wait = SKAction.wait(forDuration: 5.0)
+        let changeSequence = SKAction.sequence([wait, sceneAction])
+        
+        self.run(changeSequence)
+      
+    }
+    
+    func changeScene(){
+        let scene = GameOverScene(fileNamed: "GameOverScene")
+        scene!.scaleMode = self.scaleMode
+        
+        let theTransition = SKTransition.fade(withDuration: 0.5)
+        
+        self.view?.presentScene(scene!, transition: theTransition)
+        
+        HomeViewController.audioPlayer?.setVolume(0.0, fadeDuration: 0.5)
+        
+    }
+    
     
     func random() ->CGFloat{
         return CGFloat(Float(drand48()))
@@ -208,7 +238,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-       canFireBullet = true
+        if(!gameEnded){
+            canFireBullet = true
+        }
         for touch in touches{
             let location = touch.location(in: self)
             
