@@ -15,6 +15,8 @@ class GameOverScene : SKScene {
     var scoreLabel = SKLabelNode()
     var displayScoreLabel = SKLabelNode()
     var highScoreLabel = SKLabelNode()
+    var playAgainButton = SKLabelNode()
+    var mainMenuButton = SKLabelNode()
     
     override func didMove(to view: SKView) {
         
@@ -37,10 +39,34 @@ class GameOverScene : SKScene {
             highScoreLabel.text = ""
         }
         
+        playAgainButton = childNode(withName: "playAgainButton") as! SKLabelNode
         
-
+        mainMenuButton = childNode(withName: "mainMenuButton") as! SKLabelNode
+  
+    }
     
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        for touch in touches{
+            let point = touch.location(in: self)
+            
+            if(playAgainButton.contains(point)){
+                let scene = GameScene(fileNamed: "GameScene")
+                scene?.scaleMode = self.scaleMode
+                
+                let theTransition = SKTransition.fade(withDuration: 0.5)
+                HomeViewController.audioPlayer?.setVolume(SettingsViewController.vol, fadeDuration: 0.5)
+                
+                self.view?.presentScene(scene!, transition: theTransition)
+                
+                
+            }
+            
+            if(mainMenuButton.contains(point)){
+                self.view?.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            }
+        }
     }
     
 }
