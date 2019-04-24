@@ -81,6 +81,7 @@ class HomeViewController: UIViewController {
         }
             
             HomeViewController.audioPlayer?.play()
+            HomeViewController.audioPlayer?.numberOfLoops = -1
             
     }
 }
@@ -101,8 +102,9 @@ class HomeViewController: UIViewController {
         InGame = true
         HomeViewController.audioPlayer?.stop()
         playMusic(start: false, song: "gameAudio")
-        HomeViewController.audioPlayer?.setVolume(settings.getSliderValue(), fadeDuration: 0.5)
+    HomeViewController.audioPlayer?.setVolume(settings.getSliderValue(), fadeDuration: 0.5)
         HomeViewController.audioPlayer?.play()
+        HomeViewController.audioPlayer?.numberOfLoops = -1
         print(settings.getSliderValue())
     }
 }

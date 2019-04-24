@@ -23,8 +23,8 @@
 		4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */; };
 		B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */; };
 		B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6A226FF3270059A760 /* spaceEarth.gif */; };
+		B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6C227000510059A760 /* spaceBackground.gif */; };
 		B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2B74F226E552400E6B177 /* CustomNavController.swift */; };
-		B1D2B758226E632500E6B177 /* spaceNebula.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B757226E632400E6B177 /* spaceNebula.png */; };
 		B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */; };
 		B1EC91792266AD480019970D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC91782266AD480019970D /* HomeViewController.swift */; };
 		B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC917A2266AD5B0019970D /* SettingsViewController.swift */; };
@@ -76,8 +76,8 @@
 		9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameAudio.mp3; sourceTree = "<group>"; };
 		B1CC0B6A226FF3270059A760 /* spaceEarth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceEarth.gif; sourceTree = "<group>"; };
+		B1CC0B6C227000510059A760 /* spaceBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceBackground.gif; sourceTree = "<group>"; };
 		B1D2B74F226E552400E6B177 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
-		B1D2B757226E632400E6B177 /* spaceNebula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceNebula.png; sourceTree = "<group>"; };
 		B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HomePageAudio.mp3; sourceTree = "<group>"; };
 		B1EC91782266AD480019970D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B1EC917A2266AD5B0019970D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -143,9 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */,
+				B1CC0B6C227000510059A760 /* spaceBackground.gif */,
 				B1CC0B6A226FF3270059A760 /* spaceEarth.gif */,
 				B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */,
-				B1D2B757226E632400E6B177 /* spaceNebula.png */,
 				B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */,
 				2C8B6448225AAE27002C4010 /* AppDelegate.swift */,
 				2C8B644A225AAE27002C4010 /* GameScene.sks */,
@@ -323,9 +323,9 @@
 				B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */,
 				2C8B6459225AAE27002C4010 /* LaunchScreen.storyboard in Resources */,
 				2C8B644D225AAE27002C4010 /* Actions.sks in Resources */,
-				B1D2B758226E632500E6B177 /* spaceNebula.png in Resources */,
 				2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */,
 				B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */,
+				B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7C66RL8HZ;
 				INFOPLIST_FILE = "Infinite-Space/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -651,6 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7C66RL8HZ;
 				INFOPLIST_FILE = "Infinite-Space/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
