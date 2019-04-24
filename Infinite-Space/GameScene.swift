@@ -15,6 +15,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     static var score = 0
     static var gotHighScore = false
     let defaults = UserDefaults()
+    var highScoreLabel = SKLabelNode()
     var highScore = 0
     
     var player = SKSpriteNode()
@@ -59,8 +60,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         scoreLabel.text = "Score: \(GameScene.score)"
         
-        var highScore = defaults.integer(forKey: "highScore")
-        
+        highScore = defaults.integer(forKey: "highScore")
+        highScoreLabel = self.childNode(withName: "highScoreLabel") as! SKLabelNode
+        highScoreLabel.text = "HighScore: \(highScore)"
         
         border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
         createStarLayers()
@@ -192,6 +194,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func incrementScore(){
         GameScene.score += 1
+        if GameScene.score > highScore {
+            highScoreLabel.text = "highScore: \(GameScene.score)"
+        }
         scoreLabel.text = "Score: \(GameScene.score)"
     }
     
@@ -203,12 +208,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         
         let sceneAction = SKAction.run(changeScene)
-        let wait = SKAction.wait(forDuration: 5.0)
+        let wait = SKAction.wait(forDuration: 2.0)
         let changeSequence = SKAction.sequence([wait, sceneAction])
         
 
-        if(highScore > GameScene.score){
+        if(GameScene.score > highScore){
             GameScene.gotHighScore = true
+            highScore = GameScene.score
+            defaults.set(highScore, forKey: "highScore")
+            
         }
         
         
