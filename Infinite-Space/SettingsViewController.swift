@@ -11,6 +11,7 @@ import FLAnimatedImage
 
 class SettingsViewController: UIViewController{
     
+    @IBOutlet var popoverView: UIView!
     @IBOutlet weak var musicSlider: UISlider!
     @IBOutlet weak var ResetStatsButton: UIButton!
     @IBOutlet weak var backgroundGif: FLAnimatedImageView!
@@ -54,6 +55,21 @@ class SettingsViewController: UIViewController{
         //vol = musicSlider.value
     }
     
+    @IBAction func onResetStats(_ sender: Any) {
+        self.view.addSubview(popoverView)
+        
+        popoverView.center = self.view.center
+        
+    }
+    @IBAction func onYesReset(_ sender: Any) {
+        let defaults = UserDefaults()
+        defaults.set(0, forKey: "highScore")
+        
+        self.popoverView.removeFromSuperview()
+    }
+    @IBAction func onNoReset(_ sender: Any) {
+        self.popoverView.removeFromSuperview()
+    }
     func getSliderValue() -> Float{
         return SettingsViewController.vol
     }
