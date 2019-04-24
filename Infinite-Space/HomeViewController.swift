@@ -17,7 +17,9 @@ class HomeViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     
-    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
+    @IBOutlet weak var backgroundGif: FLAnimatedImageView!
     @IBOutlet weak var PlayButton: UIButton!
     @IBOutlet weak var LeaderboardButton: UIButton!
     @IBOutlet weak var SettingsButton: UIButton!
@@ -32,18 +34,23 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundStartPosition = backgroundImage.transform
         
         PlayButton.layer.borderWidth = 0
         LeaderboardButton.layer.borderWidth = 0
         SettingsButton.layer.borderWidth = 0
         
         let path1 : String = Bundle.main.path(forResource: "InfiniteSpace", ofType: "gif")!
+        let path2 : String = Bundle.main.path(forResource: "spaceEarth", ofType: "gif")!
+
         let url = URL(fileURLWithPath: path1)
+        let url2 = URL(fileURLWithPath: path2)
         do {
             let gifData = try Data(contentsOf: url)
-            let imageData1 = try? FLAnimatedImage(animatedGIFData: gifData) 
+            let gifData2 = try Data(contentsOf: url2)
+            let imageData1 = try? FLAnimatedImage(animatedGIFData: gifData)
+            let imageData2 = try? FLAnimatedImage(animatedGIFData: gifData2)
             LogoGif.animatedImage = imageData1 as? FLAnimatedImage
+            backgroundGif.animatedImage = imageData2 as? FLAnimatedImage
         } catch {
             print(error)
         }
@@ -51,14 +58,11 @@ class HomeViewController: UIViewController {
         
         
         playMusic(start: true, song:"HomePageAudio")
-        animateBackground()
         // Do any additional setup after loading the view.
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
-        backgroundImage.transform = backgroundStartPosition
-        animateBackground()
         playMusic(start: false, song:"HomePageAudio")
         InGame = false
         
@@ -80,13 +84,6 @@ class HomeViewController: UIViewController {
             
     }
 }
-
-    func animateBackground(){
-        UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
-            let x = -(self.backgroundImage.frame.width - self.view.frame.width)
-            self.backgroundImage.transform = CGAffineTransform(translationX: x, y: 0)
-        }, completion: nil)
-    }
     
     @IBAction func onLeaderboardButton(_ sender: Any) {
         self.performSegue(withIdentifier: "LeaderboardPush", sender: self)

@@ -22,6 +22,7 @@
 		2C8B646F225AAE27002C4010 /* Infinite_SpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */; };
 		4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */; };
 		B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */; };
+		B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6A226FF3270059A760 /* spaceEarth.gif */; };
 		B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2B74F226E552400E6B177 /* CustomNavController.swift */; };
 		B1D2B758226E632500E6B177 /* spaceNebula.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B757226E632400E6B177 /* spaceNebula.png */; };
 		B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */; };
@@ -74,6 +75,7 @@
 		3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceUITests/Pods-Infinite-SpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameAudio.mp3; sourceTree = "<group>"; };
+		B1CC0B6A226FF3270059A760 /* spaceEarth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceEarth.gif; sourceTree = "<group>"; };
 		B1D2B74F226E552400E6B177 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		B1D2B757226E632400E6B177 /* spaceNebula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceNebula.png; sourceTree = "<group>"; };
 		B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HomePageAudio.mp3; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */,
+				B1CC0B6A226FF3270059A760 /* spaceEarth.gif */,
 				B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */,
 				B1D2B757226E632400E6B177 /* spaceNebula.png */,
 				B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */,
@@ -312,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */,
 				2C8B6454225AAE27002C4010 /* Main.storyboard in Resources */,
 				2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */,
 				2C8B6456225AAE27002C4010 /* Assets.xcassets in Resources */,
