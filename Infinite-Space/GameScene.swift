@@ -62,7 +62,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         highScore = defaults.integer(forKey: "highScore")
         highScoreLabel = self.childNode(withName: "highScoreLabel") as! SKLabelNode
-        highScoreLabel.text = "HighScore: \(highScore)"
+        highScoreLabel.text = "Highscore: \(highScore)"
         
         border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
         createStarLayers()
@@ -198,7 +198,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func incrementScore(){
         GameScene.score += 1
         if GameScene.score > highScore {
-            highScoreLabel.text = "highScore: \(GameScene.score)"
+            highScoreLabel.text = "highscore: \(GameScene.score)"
         }
         scoreLabel.text = "Score: \(GameScene.score)"
     }
