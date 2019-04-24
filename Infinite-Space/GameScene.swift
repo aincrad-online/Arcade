@@ -66,6 +66,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
         createStarLayers()
+        
     }
     
     
