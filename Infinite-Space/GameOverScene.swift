@@ -33,7 +33,7 @@ class GameOverScene : SKScene {
         highScoreLabel = childNode(withName: "highScoreLabel") as! SKLabelNode
         
         if GameScene.gotHighScore{
-            highScoreLabel.text = "New High Score!!!"
+            highScoreLabel.text = "New Highscore!!!"
         }
         else{
             highScoreLabel.text = ""
