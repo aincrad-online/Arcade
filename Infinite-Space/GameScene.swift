@@ -12,7 +12,10 @@ import GameplayKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
 
 
-    var score = 0
+    static var score = 0
+    static var gotHighScore = false
+    let defaults = UserDefaults()
+    var highScore = 0
     
     var player = SKSpriteNode()
     var nextBullet = 0.0
@@ -50,9 +53,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.physicsBody?.collisionBitMask = physicsCategories.None
         player.physicsBody?.contactTestBitMask = physicsCategories.Rock
         
+        
+        GameScene.score = 0
         scoreLabel = self.childNode(withName: "ScoreLabel") as! SKLabelNode
         
-        scoreLabel.text = "Score: \(score)"
+        scoreLabel.text = "Score: \(GameScene.score)"
+        
+        var highScore = defaults.integer(forKey: "highScore")
         
         
         border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
@@ -184,8 +191,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func incrementScore(){
-        score += 1
-        scoreLabel.text = "Score: \(score)"
+        GameScene.score += 1
+        scoreLabel.text = "Score: \(GameScene.score)"
     }
     
     func gameOver(){
@@ -198,6 +205,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let sceneAction = SKAction.run(changeScene)
         let wait = SKAction.wait(forDuration: 5.0)
         let changeSequence = SKAction.sequence([wait, sceneAction])
+        
+
+        if(highScore > GameScene.score){
+            GameScene.gotHighScore = true
+        }
+        
+        
         
         self.run(changeSequence)
       
