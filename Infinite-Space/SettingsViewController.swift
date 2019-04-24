@@ -7,26 +7,35 @@
 //
 
 import UIKit
+import FLAnimatedImage
 
 class SettingsViewController: UIViewController{
     
     @IBOutlet weak var musicSlider: UISlider!
-    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var ResetStatsButton: UIButton!
+    @IBOutlet weak var backgroundGif: FLAnimatedImageView!
     
     public static var vol: Float = 0.5
     
-    var backgroundStartPosition = CGAffineTransform()
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundStartPosition = backgroundImage.transform
         ResetStatsButton.layer.borderWidth = 0
-        animateBackground()
         musicSlider.value = SettingsViewController.vol
         //musicSlider.value
         // Do any additional setup after loading the view.
+        let path2 : String = Bundle.main.path(forResource: "spaceEarth", ofType: "gif")!
+        
+        let url2 = URL(fileURLWithPath: path2)
+        do {
+            let gifData2 = try Data(contentsOf: url2)
+            let imageData2 = try? FLAnimatedImage(animatedGIFData: gifData2)
+            backgroundGif.animatedImage = imageData2 as? FLAnimatedImage
+        } catch {
+            print(error)
+        }
     }
     
     @IBAction func onBackButton(_ sender: Any) {
@@ -37,9 +46,6 @@ class SettingsViewController: UIViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        backgroundImage.transform = backgroundStartPosition
-        animateBackground()
-        
     }
     
     
@@ -51,14 +57,5 @@ class SettingsViewController: UIViewController{
     func getSliderValue() -> Float{
         return SettingsViewController.vol
     }
-    
-    
-    func animateBackground(){
-        UIView.animate(withDuration: 15, delay: 0, options: [.autoreverse, .curveLinear,.repeat], animations: {
-            let x = -(self.backgroundImage.frame.width - self.view.frame.width)
-            self.backgroundImage.transform = CGAffineTransform(translationX: x, y: 0)
-        }, completion: nil)
-    }
 }
-
 
