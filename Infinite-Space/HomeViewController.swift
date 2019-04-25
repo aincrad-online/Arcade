@@ -82,7 +82,6 @@ class HomeViewController: UIViewController {
             
             HomeViewController.audioPlayer?.play()
             HomeViewController.audioPlayer?.numberOfLoops = -1
-            
     }
 }
     
