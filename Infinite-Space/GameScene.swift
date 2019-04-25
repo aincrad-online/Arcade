@@ -76,7 +76,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func createBackground(){
         for i in 1...3 {
-            let sky = SKSpriteNode(imageNamed: "scrollingBackground")
+            let sky = SKSpriteNode(imageNamed: "Parallax")
             sky.name = "background"
             sky.size = background.size
             sky.anchorPoint = background.anchorPoint

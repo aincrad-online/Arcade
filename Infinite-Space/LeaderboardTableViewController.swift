@@ -18,7 +18,7 @@ class LeaderboardTableViewController: UITableViewController {
         tableView.backgroundView = FLAnimatedImageView()
         let backgroundGif = tableView.backgroundView as! FLAnimatedImageView
         
-        let path2 : String = Bundle.main.path(forResource: "spaceBackground", ofType: "gif")!
+        let path2 : String = Bundle.main.path(forResource: "leaderboard", ofType: "gif")!
         let url2 = URL(fileURLWithPath: path2)
         do {
             let gifData2 = try Data(contentsOf: url2)
