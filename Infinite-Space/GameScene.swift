@@ -37,6 +37,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     var border = SKPhysicsBody()
+    var background = SKSpriteNode()
     
     struct physicsCategories{
         static let None: UInt32 = 0
@@ -66,10 +67,35 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         highScoreLabel.text = "Highscore: \(highScore)"
         
         border = SKPhysicsBody.init(edgeLoopFrom: self.frame)
-        createStarLayers()
+        //createStarLayers()
         
+        background = self.childNode(withName: "background") as! SKSpriteNode
+        createBackground()
     }
     
+    
+    func createBackground(){
+        for i in 1...3 {
+            let sky = SKSpriteNode(imageNamed: "scrollingBackground")
+            sky.name = "background"
+            sky.size = background.size
+            sky.anchorPoint = background.anchorPoint
+            sky.position = CGPoint(x: sky.position.x, y: CGFloat(i) * sky.size.width)
+            sky.zPosition = -1
+            self.addChild(sky)
+        }
+    }
+    
+    func moveBackground(){
+        self.enumerateChildNodes(withName: "background", using: ({
+            (node,error) in
+            node.position.y -= 2
+            if(node.position.y < -(self.size.height)){
+                node.position.y += self.size.height * 3
+            }
+        }))
+        
+    }
     
     
     func didBegin(_ contact: SKPhysicsContact) {
@@ -283,7 +309,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
-        if(currentTime > nextBullet && canFireBullet){
+        //shooting,scoring, and rock spawn is disabled on game over
+        
+        if(currentTime > nextBullet && canFireBullet && canScore){
             nextBullet = currentTime + fireRate
             fireBullet()
         }
@@ -298,7 +326,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             incrementScore()
         }
         
-        
+        moveBackground()
     }
     
     func starfieldEmitterNode(speed: CGFloat, lifetime: CGFloat, scale: CGFloat, birthRate: CGFloat, color: SKColor) -> SKEmitterNode {
