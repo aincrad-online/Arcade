@@ -16,8 +16,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     static var gotHighScore = false
     let defaults = UserDefaults()
     var highScoreLabel = SKLabelNode()
-    static var highScore = 0
-    
+    static var highScore = 0    
     var player = SKSpriteNode()
     var nextBullet = 0.0
     var fireRate = 0.5

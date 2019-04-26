@@ -17,6 +17,10 @@ class SubmitScene : SKScene {
     var submitButton = SKLabelNode()
     var cancelButton = SKLabelNode()
     static var textField = UITextField()
+    static var scoreArray = [Int]()
+    static var userNameArray = [String]()
+    
+
     
     override func didMove(to view: SKView) {
         label  = childNode(withName: "Label") as! SKLabelNode
@@ -51,6 +55,8 @@ class SubmitScene : SKScene {
             let point = touch.location(in: self)
             
             if(submitButton.contains(point)){
+                SubmitScene.scoreArray.append(GameScene.highScore)
+                SubmitScene.userNameArray.append(SubmitScene.textField.text!)
                 SubmitScene.self.textField.removeFromSuperview()
                 self.view?.window?.rootViewController?.dismiss(animated: true, completion: nil)
             }

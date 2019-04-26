@@ -13,9 +13,6 @@ class LeaderboardTableViewController: UITableViewController {
     
     //weak var backgroundGif: FLAnimatedImageView!
     
-    var scoreArray = [NSDictionary]()
-    var numOfScores: Int!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +44,8 @@ override func numberOfSections(in tableView: UITableView) -> Int {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "HighScoreCell2", for: indexPath) as! HighScoreCellTableViewCell
         
-        cell.userNameLabel.text = SubmitScene.textField.text
-        cell.highScoreLabel.text = String (GameScene.highScore)
+        cell.userNameLabel.text = SubmitScene.userNameArray[indexPath.row]
+        cell.highScoreLabel.text = String(SubmitScene.scoreArray[indexPath.row])
         
         return cell
     }
@@ -58,7 +55,7 @@ override func numberOfSections(in tableView: UITableView) -> Int {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return SubmitScene.scoreArray.count
     }
 }
 
