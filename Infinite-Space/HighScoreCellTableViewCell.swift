@@ -13,6 +13,8 @@ class HighScoreCellTableViewCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UITextField!
     @IBOutlet weak var highScoreLabel: UITextField!
     
+    @IBOutlet weak var userNameStatic: UITextField!
+    @IBOutlet weak var scoreStatic: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

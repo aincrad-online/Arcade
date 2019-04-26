@@ -16,7 +16,7 @@ class SubmitScene : SKScene {
     var label = SKLabelNode()
     var submitButton = SKLabelNode()
     var cancelButton = SKLabelNode()
-    var textField = UITextField()
+    static var textField = UITextField()
     
     override func didMove(to view: SKView) {
         label  = childNode(withName: "Label") as! SKLabelNode
@@ -33,17 +33,17 @@ class SubmitScene : SKScene {
         
         
         let frame = CGRect(x: pos.x , y: pos.y, width: CGFloat(width), height: CGFloat(height))
-        textField = UITextField(frame: frame)
+        SubmitScene.textField = UITextField(frame: frame)
         
-        textField.backgroundColor = UIColor.white
-        textField.textColor = UIColor.black
-        textField.textAlignment = NSTextAlignment.center
+        SubmitScene.textField.backgroundColor = UIColor.white
+        SubmitScene.textField.textColor = UIColor.black
+        SubmitScene.textField.textAlignment = NSTextAlignment.center
         
-        textField.font = UIFont.systemFont(ofSize: label.fontSize/2)
-        textField.adjustsFontSizeToFitWidth = true
+        SubmitScene.textField.font = UIFont.systemFont(ofSize: label.fontSize/2)
+        SubmitScene.textField.adjustsFontSizeToFitWidth = true
         
         
-        self.view?.addSubview(textField)
+        self.view?.addSubview(SubmitScene.textField)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -51,7 +51,7 @@ class SubmitScene : SKScene {
             let point = touch.location(in: self)
             
             if(submitButton.contains(point)){
-                self.textField.removeFromSuperview()
+                SubmitScene.self.textField.removeFromSuperview()
                 self.view?.window?.rootViewController?.dismiss(animated: true, completion: nil)
             }
             
@@ -61,7 +61,7 @@ class SubmitScene : SKScene {
                 
                 let theTransition = SKTransition.fade(withDuration: 0.5)
                
-                self.textField.removeFromSuperview()
+                SubmitScene.self.textField.removeFromSuperview()
                 self.view?.presentScene(scene!, transition: theTransition)
             }
             
