@@ -124,6 +124,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             gameOver()
             body1.node?.removeFromParent()
             body2.node?.removeFromParent()
+
         }
         
         //bullet hits a rock
@@ -179,6 +180,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let bulletSequence = SKAction.sequence([moveBullet, destroyBullet])
         
         bullet.run(bulletSequence)
+        
     }
     
     func spawnRocks(){
