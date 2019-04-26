@@ -34,18 +34,22 @@ class GameOverScene : SKScene {
         
         highScoreLabel = childNode(withName: "highScoreLabel") as! SKLabelNode
         
+        submitButton = childNode(withName: "submitButton") as! SKLabelNode
+        
         if GameScene.gotHighScore{
             highScoreLabel.text = "New Highscore!!!"
+            submitButton.text = "Submit highscore"
         }
         else{
             highScoreLabel.text = ""
+            submitButton.text = ""
         }
         
         playAgainButton = childNode(withName: "playAgainButton") as! SKLabelNode
         
         mainMenuButton = childNode(withName: "mainMenuButton") as! SKLabelNode
         
-        submitButton = childNode(withName: "submitButton") as! SKLabelNode
+        
   
     }
     
