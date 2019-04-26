@@ -15,8 +15,13 @@ class GameViewController: UIViewController {
 
     
     
+    @IBOutlet var popover: UIView!
+    static var popoverView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GameViewController.popoverView = popover
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -32,6 +37,8 @@ class GameViewController: UIViewController {
            //view.showsNodeCount = true
         }
     }
+    
+
 
     override var shouldAutorotate: Bool {
         return true

@@ -1,808 +1,816 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		2399AEA2593C86EB603BEBD1 /* Pods_Infinite_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */; };
-		2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */; };
-		2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CBEC4226FE06000B06727 /* GameOverScene.sks */; };
-		2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6448225AAE27002C4010 /* AppDelegate.swift */; };
-		2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B644A225AAE27002C4010 /* GameScene.sks */; };
-		2C8B644D225AAE27002C4010 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B644C225AAE27002C4010 /* Actions.sks */; };
-		2C8B644F225AAE27002C4010 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B644E225AAE27002C4010 /* GameScene.swift */; };
-		2C8B6451225AAE27002C4010 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6450225AAE27002C4010 /* GameViewController.swift */; };
-		2C8B6454225AAE27002C4010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B6452225AAE27002C4010 /* Main.storyboard */; };
-		2C8B6456225AAE27002C4010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B6455225AAE27002C4010 /* Assets.xcassets */; };
-		2C8B6459225AAE27002C4010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B6457225AAE27002C4010 /* LaunchScreen.storyboard */; };
-		2C8B6464225AAE27002C4010 /* Infinite_SpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6463225AAE27002C4010 /* Infinite_SpaceTests.swift */; };
-		2C8B646F225AAE27002C4010 /* Infinite_SpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */; };
-		4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */; };
-		B17B6F5022723E0B00904CF7 /* leaderboard.gif in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F4F22723E0A00904CF7 /* leaderboard.gif */; };
-		B17B6F54227289E700904CF7 /* shipShot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F53227289E600904CF7 /* shipShot.mp3 */; };
-		B17B6F562272B52900904CF7 /* HighScoreCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B6F552272B52900904CF7 /* HighScoreCellTableViewCell.swift */; };
-		B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */; };
-		B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6A226FF3270059A760 /* spaceEarth.gif */; };
-		B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6C227000510059A760 /* spaceBackground.gif */; };
-		B1CC0B6F227008BC0059A760 /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6E227008BC0059A760 /* space.jpg */; };
-		B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2B74F226E552400E6B177 /* CustomNavController.swift */; };
-		B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */; };
-		B1EC91792266AD480019970D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC91782266AD480019970D /* HomeViewController.swift */; };
-		B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC917A2266AD5B0019970D /* SettingsViewController.swift */; };
-		B1EC91812266AE3F0019970D /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */; };
-		B1FCF1322267C45F00E22F3C /* InfiniteSpace.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */; };
-		BEF348F83D8CB097804DC82B /* Pods_Infinite_SpaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76ECE1FBF8D0A800149B7C6 /* Pods_Infinite_SpaceTests.framework */; };
+        2399AEA2593C86EB603BEBD1 /* Pods_Infinite_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */; };
+        2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */; };
+        2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CBEC4226FE06000B06727 /* GameOverScene.sks */; };
+        2C38A11E2272B16700F9613E /* SubmitScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38A11D2272B16700F9613E /* SubmitScene.swift */; };
+        2C38A1202272B46000F9613E /* SubmitScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C38A11F2272B46000F9613E /* SubmitScene.sks */; };
+        2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6448225AAE27002C4010 /* AppDelegate.swift */; };
+        2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B644A225AAE27002C4010 /* GameScene.sks */; };
+        2C8B644D225AAE27002C4010 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B644C225AAE27002C4010 /* Actions.sks */; };
+        2C8B644F225AAE27002C4010 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B644E225AAE27002C4010 /* GameScene.swift */; };
+        2C8B6451225AAE27002C4010 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6450225AAE27002C4010 /* GameViewController.swift */; };
+        2C8B6454225AAE27002C4010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B6452225AAE27002C4010 /* Main.storyboard */; };
+        2C8B6456225AAE27002C4010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B6455225AAE27002C4010 /* Assets.xcassets */; };
+        2C8B6459225AAE27002C4010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B6457225AAE27002C4010 /* LaunchScreen.storyboard */; };
+        2C8B6464225AAE27002C4010 /* Infinite_SpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6463225AAE27002C4010 /* Infinite_SpaceTests.swift */; };
+        2C8B646F225AAE27002C4010 /* Infinite_SpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */; };
+        4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */; };
+        B17B6F5022723E0B00904CF7 /* leaderboard.gif in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F4F22723E0A00904CF7 /* leaderboard.gif */; };
+        B17B6F54227289E700904CF7 /* shipShot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F53227289E600904CF7 /* shipShot.mp3 */; };
+        B17B6F562272B52900904CF7 /* HighScoreCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B6F552272B52900904CF7 /* HighScoreCellTableViewCell.swift */; };
+        B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */; };
+        B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6A226FF3270059A760 /* spaceEarth.gif */; };
+        B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6C227000510059A760 /* spaceBackground.gif */; };
+        B1CC0B6F227008BC0059A760 /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6E227008BC0059A760 /* space.jpg */; };
+        B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2B74F226E552400E6B177 /* CustomNavController.swift */; };
+        B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */; };
+        B1EC91792266AD480019970D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC91782266AD480019970D /* HomeViewController.swift */; };
+        B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC917A2266AD5B0019970D /* SettingsViewController.swift */; };
+        B1EC91812266AE3F0019970D /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */; };
+        B1FCF1322267C45F00E22F3C /* InfiniteSpace.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */; };
+        BEF348F83D8CB097804DC82B /* Pods_Infinite_SpaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76ECE1FBF8D0A800149B7C6 /* Pods_Infinite_SpaceTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2C8B6460225AAE27002C4010 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2C8B643D225AAE27002C4010 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C8B6444225AAE27002C4010;
-			remoteInfo = "Infinite-Space";
-		};
-		2C8B646B225AAE27002C4010 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2C8B643D225AAE27002C4010 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C8B6444225AAE27002C4010;
-			remoteInfo = "Infinite-Space";
-		};
+        2C8B6460225AAE27002C4010 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 2C8B643D225AAE27002C4010 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 2C8B6444225AAE27002C4010;
+            remoteInfo = "Infinite-Space";
+        };
+        2C8B646B225AAE27002C4010 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 2C8B643D225AAE27002C4010 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 2C8B6444225AAE27002C4010;
+            remoteInfo = "Infinite-Space";
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0430C3DFF75994186DE7431D /* Pods-Infinite-SpaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceTests/Pods-Infinite-SpaceTests.release.xcconfig"; sourceTree = "<group>"; };
-		1FC2D2F846A27F19F7A258F7 /* Pods-Infinite-SpaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceTests/Pods-Infinite-SpaceTests.debug.xcconfig"; sourceTree = "<group>"; };
-		29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
-		2C0CBEC4226FE06000B06727 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
-		2C8B6445225AAE27002C4010 /* Infinite-Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinite-Space.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C8B6448225AAE27002C4010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C8B644A225AAE27002C4010 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		2C8B644C225AAE27002C4010 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		2C8B644E225AAE27002C4010 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		2C8B6450225AAE27002C4010 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		2C8B6453225AAE27002C4010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2C8B6455225AAE27002C4010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C8B6458225AAE27002C4010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2C8B645A225AAE27002C4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C8B645F225AAE27002C4010 /* Infinite-SpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infinite-SpaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C8B6463225AAE27002C4010 /* Infinite_SpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinite_SpaceTests.swift; sourceTree = "<group>"; };
-		2C8B6465225AAE27002C4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C8B646A225AAE27002C4010 /* Infinite-SpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infinite-SpaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinite_SpaceUITests.swift; sourceTree = "<group>"; };
-		2C8B6470225AAE27002C4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceUITests/Pods-Infinite-SpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.debug.xcconfig"; sourceTree = "<group>"; };
-		B17B6F4F22723E0A00904CF7 /* leaderboard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaderboard.gif; sourceTree = "<group>"; };
-		B17B6F53227289E600904CF7 /* shipShot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shipShot.mp3; sourceTree = "<group>"; };
-		B17B6F552272B52900904CF7 /* HighScoreCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreCellTableViewCell.swift; sourceTree = "<group>"; };
-		B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameAudio.mp3; sourceTree = "<group>"; };
-		B1CC0B6A226FF3270059A760 /* spaceEarth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceEarth.gif; sourceTree = "<group>"; };
-		B1CC0B6C227000510059A760 /* spaceBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceBackground.gif; sourceTree = "<group>"; };
-		B1CC0B6E227008BC0059A760 /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
-		B1D2B74F226E552400E6B177 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
-		B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HomePageAudio.mp3; sourceTree = "<group>"; };
-		B1EC91782266AD480019970D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B1EC917A2266AD5B0019970D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
-		B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = InfiniteSpace.gif; sourceTree = "<group>"; };
-		B76ECE1FBF8D0A800149B7C6 /* Pods_Infinite_SpaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_SpaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2112AF2EAF76D2A978A4999 /* Pods-Infinite-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.release.xcconfig"; sourceTree = "<group>"; };
-		D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_SpaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6D046942E07164BF82F6E18 /* Pods-Infinite-SpaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceUITests/Pods-Infinite-SpaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+        0430C3DFF75994186DE7431D /* Pods-Infinite-SpaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceTests/Pods-Infinite-SpaceTests.release.xcconfig"; sourceTree = "<group>"; };
+        1FC2D2F846A27F19F7A258F7 /* Pods-Infinite-SpaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceTests/Pods-Infinite-SpaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+        29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+        2C0CBEC4226FE06000B06727 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+        2C38A11D2272B16700F9613E /* SubmitScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitScene.swift; sourceTree = "<group>"; };
+        2C38A11F2272B46000F9613E /* SubmitScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SubmitScene.sks; sourceTree = "<group>"; };
+        2C8B6445225AAE27002C4010 /* Infinite-Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinite-Space.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+        2C8B6448225AAE27002C4010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        2C8B644A225AAE27002C4010 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+        2C8B644C225AAE27002C4010 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+        2C8B644E225AAE27002C4010 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+        2C8B6450225AAE27002C4010 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+        2C8B6453225AAE27002C4010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        2C8B6455225AAE27002C4010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        2C8B6458225AAE27002C4010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        2C8B645A225AAE27002C4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        2C8B645F225AAE27002C4010 /* Infinite-SpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infinite-SpaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        2C8B6463225AAE27002C4010 /* Infinite_SpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinite_SpaceTests.swift; sourceTree = "<group>"; };
+        2C8B6465225AAE27002C4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        2C8B646A225AAE27002C4010 /* Infinite-SpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infinite-SpaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinite_SpaceUITests.swift; sourceTree = "<group>"; };
+        2C8B6470225AAE27002C4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceUITests/Pods-Infinite-SpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+        9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.debug.xcconfig"; sourceTree = "<group>"; };
+        B17B6F4F22723E0A00904CF7 /* leaderboard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaderboard.gif; sourceTree = "<group>"; };
+        B17B6F53227289E600904CF7 /* shipShot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shipShot.mp3; sourceTree = "<group>"; };
+        B17B6F552272B52900904CF7 /* HighScoreCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreCellTableViewCell.swift; sourceTree = "<group>"; };
+        B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameAudio.mp3; sourceTree = "<group>"; };
+        B1CC0B6A226FF3270059A760 /* spaceEarth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceEarth.gif; sourceTree = "<group>"; };
+        B1CC0B6C227000510059A760 /* spaceBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceBackground.gif; sourceTree = "<group>"; };
+        B1CC0B6E227008BC0059A760 /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
+        B1D2B74F226E552400E6B177 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+        B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HomePageAudio.mp3; sourceTree = "<group>"; };
+        B1EC91782266AD480019970D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+        B1EC917A2266AD5B0019970D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+        B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
+        B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = InfiniteSpace.gif; sourceTree = "<group>"; };
+        B76ECE1FBF8D0A800149B7C6 /* Pods_Infinite_SpaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_SpaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        C2112AF2EAF76D2A978A4999 /* Pods-Infinite-Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.release.xcconfig"; sourceTree = "<group>"; };
+        D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_SpaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        F6D046942E07164BF82F6E18 /* Pods-Infinite-SpaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceUITests/Pods-Infinite-SpaceUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C8B6442225AAE27002C4010 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2399AEA2593C86EB603BEBD1 /* Pods_Infinite_Space.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C8B645C225AAE27002C4010 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BEF348F83D8CB097804DC82B /* Pods_Infinite_SpaceTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C8B6467225AAE27002C4010 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        2C8B6442225AAE27002C4010 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                2399AEA2593C86EB603BEBD1 /* Pods_Infinite_Space.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2C8B645C225AAE27002C4010 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                BEF348F83D8CB097804DC82B /* Pods_Infinite_SpaceTests.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2C8B6467225AAE27002C4010 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C8B643C225AAE27002C4010 = {
-			isa = PBXGroup;
-			children = (
-				2C8B6447225AAE27002C4010 /* Infinite-Space */,
-				2C8B6462225AAE27002C4010 /* Infinite-SpaceTests */,
-				2C8B646D225AAE27002C4010 /* Infinite-SpaceUITests */,
-				2C8B6446225AAE27002C4010 /* Products */,
-				D50E1E4D97532A1672175C81 /* Pods */,
-				30FB4D97D368EFB97E1F34F8 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		2C8B6446225AAE27002C4010 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2C8B6445225AAE27002C4010 /* Infinite-Space.app */,
-				2C8B645F225AAE27002C4010 /* Infinite-SpaceTests.xctest */,
-				2C8B646A225AAE27002C4010 /* Infinite-SpaceUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2C8B6447225AAE27002C4010 /* Infinite-Space */ = {
-			isa = PBXGroup;
-			children = (
-				B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */,
-				B17B6F53227289E600904CF7 /* shipShot.mp3 */,
-				B17B6F4F22723E0A00904CF7 /* leaderboard.gif */,
-				B1CC0B6C227000510059A760 /* spaceBackground.gif */,
-				B1CC0B6A226FF3270059A760 /* spaceEarth.gif */,
-				B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */,
-				B1CC0B6E227008BC0059A760 /* space.jpg */,
-				B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */,
-				2C8B6448225AAE27002C4010 /* AppDelegate.swift */,
-				2C8B644A225AAE27002C4010 /* GameScene.sks */,
-				2C8B644C225AAE27002C4010 /* Actions.sks */,
-				2C8B644E225AAE27002C4010 /* GameScene.swift */,
-				2C8B6450225AAE27002C4010 /* GameViewController.swift */,
-				2C8B6452225AAE27002C4010 /* Main.storyboard */,
-				B1EC91782266AD480019970D /* HomeViewController.swift */,
-				B1EC917A2266AD5B0019970D /* SettingsViewController.swift */,
-				2C8B6455225AAE27002C4010 /* Assets.xcassets */,
-				2C8B6457225AAE27002C4010 /* LaunchScreen.storyboard */,
-				2C8B645A225AAE27002C4010 /* Info.plist */,
-				B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */,
-				B1D2B74F226E552400E6B177 /* CustomNavController.swift */,
-				2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */,
-				2C0CBEC4226FE06000B06727 /* GameOverScene.sks */,
+        2C8B643C225AAE27002C4010 = {
+            isa = PBXGroup;
+            children = (
+                2C8B6447225AAE27002C4010 /* Infinite-Space */,
+                2C8B6462225AAE27002C4010 /* Infinite-SpaceTests */,
+                2C8B646D225AAE27002C4010 /* Infinite-SpaceUITests */,
+                2C8B6446225AAE27002C4010 /* Products */,
+                D50E1E4D97532A1672175C81 /* Pods */,
+                30FB4D97D368EFB97E1F34F8 /* Frameworks */,
+            );
+            sourceTree = "<group>";
+        };
+        2C8B6446225AAE27002C4010 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                2C8B6445225AAE27002C4010 /* Infinite-Space.app */,
+                2C8B645F225AAE27002C4010 /* Infinite-SpaceTests.xctest */,
+                2C8B646A225AAE27002C4010 /* Infinite-SpaceUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        2C8B6447225AAE27002C4010 /* Infinite-Space */ = {
+            isa = PBXGroup;
+            children = (
+                B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */,
+                B17B6F53227289E600904CF7 /* shipShot.mp3 */,
+                B17B6F4F22723E0A00904CF7 /* leaderboard.gif */,
+                B1CC0B6C227000510059A760 /* spaceBackground.gif */,
+                B1CC0B6A226FF3270059A760 /* spaceEarth.gif */,
+                B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */,
+                B1CC0B6E227008BC0059A760 /* space.jpg */,
+                B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */,
+                2C8B6448225AAE27002C4010 /* AppDelegate.swift */,
+                2C8B644A225AAE27002C4010 /* GameScene.sks */,
+                2C8B644C225AAE27002C4010 /* Actions.sks */,
+                2C8B644E225AAE27002C4010 /* GameScene.swift */,
+                2C8B6450225AAE27002C4010 /* GameViewController.swift */,
+                2C8B6452225AAE27002C4010 /* Main.storyboard */,
+                B1EC91782266AD480019970D /* HomeViewController.swift */,
+                B1EC917A2266AD5B0019970D /* SettingsViewController.swift */,
+                2C8B6455225AAE27002C4010 /* Assets.xcassets */,
+                2C8B6457225AAE27002C4010 /* LaunchScreen.storyboard */,
+                2C8B645A225AAE27002C4010 /* Info.plist */,
+                B1EC91802266AE3F0019970D /* LeaderboardTableViewController.swift */,
+                B1D2B74F226E552400E6B177 /* CustomNavController.swift */,
+                2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */,
+                2C0CBEC4226FE06000B06727 /* GameOverScene.sks */,
 				B17B6F552272B52900904CF7 /* HighScoreCellTableViewCell.swift */,
-			);
-			path = "Infinite-Space";
-			sourceTree = "<group>";
-		};
-		2C8B6462225AAE27002C4010 /* Infinite-SpaceTests */ = {
-			isa = PBXGroup;
-			children = (
-				2C8B6463225AAE27002C4010 /* Infinite_SpaceTests.swift */,
-				2C8B6465225AAE27002C4010 /* Info.plist */,
-			);
-			path = "Infinite-SpaceTests";
-			sourceTree = "<group>";
-		};
-		2C8B646D225AAE27002C4010 /* Infinite-SpaceUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */,
-				2C8B6470225AAE27002C4010 /* Info.plist */,
-			);
-			path = "Infinite-SpaceUITests";
-			sourceTree = "<group>";
-		};
-		30FB4D97D368EFB97E1F34F8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */,
-				B76ECE1FBF8D0A800149B7C6 /* Pods_Infinite_SpaceTests.framework */,
-				D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D50E1E4D97532A1672175C81 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */,
-				C2112AF2EAF76D2A978A4999 /* Pods-Infinite-Space.release.xcconfig */,
-				1FC2D2F846A27F19F7A258F7 /* Pods-Infinite-SpaceTests.debug.xcconfig */,
-				0430C3DFF75994186DE7431D /* Pods-Infinite-SpaceTests.release.xcconfig */,
-				3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */,
-				F6D046942E07164BF82F6E18 /* Pods-Infinite-SpaceUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
+				2C38A11D2272B16700F9613E /* SubmitScene.swift */,
+				2C38A11F2272B46000F9613E /* SubmitScene.sks */,
+            );
+            path = "Infinite-Space";
+            sourceTree = "<group>";
+        };
+        2C8B6462225AAE27002C4010 /* Infinite-SpaceTests */ = {
+            isa = PBXGroup;
+            children = (
+                2C8B6463225AAE27002C4010 /* Infinite_SpaceTests.swift */,
+                2C8B6465225AAE27002C4010 /* Info.plist */,
+            );
+            path = "Infinite-SpaceTests";
+            sourceTree = "<group>";
+        };
+        2C8B646D225AAE27002C4010 /* Infinite-SpaceUITests */ = {
+            isa = PBXGroup;
+            children = (
+                2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */,
+                2C8B6470225AAE27002C4010 /* Info.plist */,
+            );
+            path = "Infinite-SpaceUITests";
+            sourceTree = "<group>";
+        };
+        30FB4D97D368EFB97E1F34F8 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */,
+                B76ECE1FBF8D0A800149B7C6 /* Pods_Infinite_SpaceTests.framework */,
+                D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        D50E1E4D97532A1672175C81 /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */,
+                C2112AF2EAF76D2A978A4999 /* Pods-Infinite-Space.release.xcconfig */,
+                1FC2D2F846A27F19F7A258F7 /* Pods-Infinite-SpaceTests.debug.xcconfig */,
+                0430C3DFF75994186DE7431D /* Pods-Infinite-SpaceTests.release.xcconfig */,
+                3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */,
+                F6D046942E07164BF82F6E18 /* Pods-Infinite-SpaceUITests.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C8B6444225AAE27002C4010 /* Infinite-Space */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2C8B6473225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-Space" */;
-			buildPhases = (
-				2BC3B6AB53B335A27140E8AA /* [CP] Check Pods Manifest.lock */,
-				2C8B6441225AAE27002C4010 /* Sources */,
-				2C8B6442225AAE27002C4010 /* Frameworks */,
-				2C8B6443225AAE27002C4010 /* Resources */,
-				A650A288E1DEED308E6D636C /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Infinite-Space";
-			productName = "Infinite-Space";
-			productReference = 2C8B6445225AAE27002C4010 /* Infinite-Space.app */;
-			productType = "com.apple.product-type.application";
-		};
-		2C8B645E225AAE27002C4010 /* Infinite-SpaceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2C8B6476225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-SpaceTests" */;
-			buildPhases = (
-				942A75AD1DE7ACF11E0A1684 /* [CP] Check Pods Manifest.lock */,
-				2C8B645B225AAE27002C4010 /* Sources */,
-				2C8B645C225AAE27002C4010 /* Frameworks */,
-				2C8B645D225AAE27002C4010 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2C8B6461225AAE27002C4010 /* PBXTargetDependency */,
-			);
-			name = "Infinite-SpaceTests";
-			productName = "Infinite-SpaceTests";
-			productReference = 2C8B645F225AAE27002C4010 /* Infinite-SpaceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2C8B6469225AAE27002C4010 /* Infinite-SpaceUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2C8B6479225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-SpaceUITests" */;
-			buildPhases = (
-				6C4D365776DC3D7042773AAA /* [CP] Check Pods Manifest.lock */,
-				2C8B6466225AAE27002C4010 /* Sources */,
-				2C8B6467225AAE27002C4010 /* Frameworks */,
-				2C8B6468225AAE27002C4010 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2C8B646C225AAE27002C4010 /* PBXTargetDependency */,
-			);
-			name = "Infinite-SpaceUITests";
-			productName = "Infinite-SpaceUITests";
-			productReference = 2C8B646A225AAE27002C4010 /* Infinite-SpaceUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+        2C8B6444225AAE27002C4010 /* Infinite-Space */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 2C8B6473225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-Space" */;
+            buildPhases = (
+                2BC3B6AB53B335A27140E8AA /* [CP] Check Pods Manifest.lock */,
+                2C8B6441225AAE27002C4010 /* Sources */,
+                2C8B6442225AAE27002C4010 /* Frameworks */,
+                2C8B6443225AAE27002C4010 /* Resources */,
+                A650A288E1DEED308E6D636C /* [CP] Embed Pods Frameworks */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "Infinite-Space";
+            productName = "Infinite-Space";
+            productReference = 2C8B6445225AAE27002C4010 /* Infinite-Space.app */;
+            productType = "com.apple.product-type.application";
+        };
+        2C8B645E225AAE27002C4010 /* Infinite-SpaceTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 2C8B6476225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-SpaceTests" */;
+            buildPhases = (
+                942A75AD1DE7ACF11E0A1684 /* [CP] Check Pods Manifest.lock */,
+                2C8B645B225AAE27002C4010 /* Sources */,
+                2C8B645C225AAE27002C4010 /* Frameworks */,
+                2C8B645D225AAE27002C4010 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                2C8B6461225AAE27002C4010 /* PBXTargetDependency */,
+            );
+            name = "Infinite-SpaceTests";
+            productName = "Infinite-SpaceTests";
+            productReference = 2C8B645F225AAE27002C4010 /* Infinite-SpaceTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        2C8B6469225AAE27002C4010 /* Infinite-SpaceUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 2C8B6479225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-SpaceUITests" */;
+            buildPhases = (
+                6C4D365776DC3D7042773AAA /* [CP] Check Pods Manifest.lock */,
+                2C8B6466225AAE27002C4010 /* Sources */,
+                2C8B6467225AAE27002C4010 /* Frameworks */,
+                2C8B6468225AAE27002C4010 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                2C8B646C225AAE27002C4010 /* PBXTargetDependency */,
+            );
+            name = "Infinite-SpaceUITests";
+            productName = "Infinite-SpaceUITests";
+            productReference = 2C8B646A225AAE27002C4010 /* Infinite-SpaceUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C8B643D225AAE27002C4010 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "aincrad-online";
-				TargetAttributes = {
-					2C8B6444225AAE27002C4010 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					2C8B645E225AAE27002C4010 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 2C8B6444225AAE27002C4010;
-					};
-					2C8B6469225AAE27002C4010 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 2C8B6444225AAE27002C4010;
-					};
-				};
-			};
-			buildConfigurationList = 2C8B6440225AAE27002C4010 /* Build configuration list for PBXProject "Infinite-Space" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 2C8B643C225AAE27002C4010;
-			productRefGroup = 2C8B6446225AAE27002C4010 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				2C8B6444225AAE27002C4010 /* Infinite-Space */,
-				2C8B645E225AAE27002C4010 /* Infinite-SpaceTests */,
-				2C8B6469225AAE27002C4010 /* Infinite-SpaceUITests */,
-			);
-		};
+        2C8B643D225AAE27002C4010 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1010;
+                LastUpgradeCheck = 1010;
+                ORGANIZATIONNAME = "aincrad-online";
+                TargetAttributes = {
+                    2C8B6444225AAE27002C4010 = {
+                        CreatedOnToolsVersion = 10.1;
+                    };
+                    2C8B645E225AAE27002C4010 = {
+                        CreatedOnToolsVersion = 10.1;
+                        TestTargetID = 2C8B6444225AAE27002C4010;
+                    };
+                    2C8B6469225AAE27002C4010 = {
+                        CreatedOnToolsVersion = 10.1;
+                        TestTargetID = 2C8B6444225AAE27002C4010;
+                    };
+                };
+            };
+            buildConfigurationList = 2C8B6440225AAE27002C4010 /* Build configuration list for PBXProject "Infinite-Space" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 2C8B643C225AAE27002C4010;
+            productRefGroup = 2C8B6446225AAE27002C4010 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                2C8B6444225AAE27002C4010 /* Infinite-Space */,
+                2C8B645E225AAE27002C4010 /* Infinite-SpaceTests */,
+                2C8B6469225AAE27002C4010 /* Infinite-SpaceUITests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C8B6443225AAE27002C4010 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */,
-				2C8B6454225AAE27002C4010 /* Main.storyboard in Resources */,
-				2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */,
-				2C8B6456225AAE27002C4010 /* Assets.xcassets in Resources */,
-				B17B6F5022723E0B00904CF7 /* leaderboard.gif in Resources */,
-				B1CC0B6F227008BC0059A760 /* space.jpg in Resources */,
-				B1FCF1322267C45F00E22F3C /* InfiniteSpace.gif in Resources */,
-				B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */,
-				2C8B6459225AAE27002C4010 /* LaunchScreen.storyboard in Resources */,
-				2C8B644D225AAE27002C4010 /* Actions.sks in Resources */,
-				B17B6F54227289E700904CF7 /* shipShot.mp3 in Resources */,
-				2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */,
-				B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */,
-				B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C8B645D225AAE27002C4010 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C8B6468225AAE27002C4010 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        2C8B6443225AAE27002C4010 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */,
+                2C8B6454225AAE27002C4010 /* Main.storyboard in Resources */,
+                2C38A1202272B46000F9613E /* SubmitScene.sks in Resources */,
+                2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */,
+                2C8B6456225AAE27002C4010 /* Assets.xcassets in Resources */,
+                B17B6F5022723E0B00904CF7 /* leaderboard.gif in Resources */,
+                B1CC0B6F227008BC0059A760 /* space.jpg in Resources */,
+                B1FCF1322267C45F00E22F3C /* InfiniteSpace.gif in Resources */,
+                B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */,
+                2C8B6459225AAE27002C4010 /* LaunchScreen.storyboard in Resources */,
+                2C8B644D225AAE27002C4010 /* Actions.sks in Resources */,
+                B17B6F54227289E700904CF7 /* shipShot.mp3 in Resources */,
+                2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */,
+                B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */,
+                B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2C8B645D225AAE27002C4010 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2C8B6468225AAE27002C4010 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2BC3B6AB53B335A27140E8AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Infinite-Space-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C4D365776DC3D7042773AAA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Infinite-SpaceUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		942A75AD1DE7ACF11E0A1684 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Infinite-SpaceTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A650A288E1DEED308E6D636C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
-				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
+        2BC3B6AB53B335A27140E8AA /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-Infinite-Space-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        6C4D365776DC3D7042773AAA /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-Infinite-SpaceUITests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        942A75AD1DE7ACF11E0A1684 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-Infinite-SpaceTests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        A650A288E1DEED308E6D636C /* [CP] Embed Pods Frameworks */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${SRCROOT}/Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space-frameworks.sh",
+                "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+                "${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+                "${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+                "${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+                "${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+            );
+            name = "[CP] Embed Pods Frameworks";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space-frameworks.sh\"\n";
+            showEnvVarsInLog = 0;
+        };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C8B6441225AAE27002C4010 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C8B644F225AAE27002C4010 /* GameScene.swift in Sources */,
-				2C8B6451225AAE27002C4010 /* GameViewController.swift in Sources */,
-				2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */,
-				B17B6F562272B52900904CF7 /* HighScoreCellTableViewCell.swift in Sources */,
-				2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */,
-				B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */,
-				B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */,
-				B1EC91792266AD480019970D /* HomeViewController.swift in Sources */,
-				B1EC91812266AE3F0019970D /* LeaderboardTableViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C8B645B225AAE27002C4010 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C8B6464225AAE27002C4010 /* Infinite_SpaceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C8B6466225AAE27002C4010 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C8B646F225AAE27002C4010 /* Infinite_SpaceUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        2C8B6441225AAE27002C4010 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                2C38A11E2272B16700F9613E /* SubmitScene.swift in Sources */,
+                2C8B644F225AAE27002C4010 /* GameScene.swift in Sources */,
+                2C8B6451225AAE27002C4010 /* GameViewController.swift in Sources */,
+                2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */,
+                B17B6F562272B52900904CF7 /* HighScoreCellTableViewCell.swift in Sources */,
+                2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */,
+                B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */,
+                B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */,
+                B1EC91792266AD480019970D /* HomeViewController.swift in Sources */,
+                B1EC91812266AE3F0019970D /* LeaderboardTableViewController.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2C8B645B225AAE27002C4010 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                2C8B6464225AAE27002C4010 /* Infinite_SpaceTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        2C8B6466225AAE27002C4010 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                2C8B646F225AAE27002C4010 /* Infinite_SpaceUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2C8B6461225AAE27002C4010 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2C8B6444225AAE27002C4010 /* Infinite-Space */;
-			targetProxy = 2C8B6460225AAE27002C4010 /* PBXContainerItemProxy */;
-		};
-		2C8B646C225AAE27002C4010 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2C8B6444225AAE27002C4010 /* Infinite-Space */;
-			targetProxy = 2C8B646B225AAE27002C4010 /* PBXContainerItemProxy */;
-		};
+        2C8B6461225AAE27002C4010 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 2C8B6444225AAE27002C4010 /* Infinite-Space */;
+            targetProxy = 2C8B6460225AAE27002C4010 /* PBXContainerItemProxy */;
+        };
+        2C8B646C225AAE27002C4010 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 2C8B6444225AAE27002C4010 /* Infinite-Space */;
+            targetProxy = 2C8B646B225AAE27002C4010 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C8B6452225AAE27002C4010 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C8B6453225AAE27002C4010 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2C8B6457225AAE27002C4010 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C8B6458225AAE27002C4010 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        2C8B6452225AAE27002C4010 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                2C8B6453225AAE27002C4010 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        2C8B6457225AAE27002C4010 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                2C8B6458225AAE27002C4010 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2C8B6471225AAE27002C4010 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		2C8B6472225AAE27002C4010 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2C8B6474225AAE27002C4010 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F7C66RL8HZ;
-				INFOPLIST_FILE = "Infinite-Space/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-Space";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2C8B6475225AAE27002C4010 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2112AF2EAF76D2A978A4999 /* Pods-Infinite-Space.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F7C66RL8HZ;
-				INFOPLIST_FILE = "Infinite-Space/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-Space";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		2C8B6477225AAE27002C4010 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FC2D2F846A27F19F7A258F7 /* Pods-Infinite-SpaceTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Infinite-SpaceTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-SpaceTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinite-Space.app/Infinite-Space";
-			};
-			name = Debug;
-		};
-		2C8B6478225AAE27002C4010 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0430C3DFF75994186DE7431D /* Pods-Infinite-SpaceTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Infinite-SpaceTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-SpaceTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinite-Space.app/Infinite-Space";
-			};
-			name = Release;
-		};
-		2C8B647A225AAE27002C4010 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Infinite-SpaceUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-SpaceUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Infinite-Space";
-			};
-			name = Debug;
-		};
-		2C8B647B225AAE27002C4010 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6D046942E07164BF82F6E18 /* Pods-Infinite-SpaceUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Infinite-SpaceUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-SpaceUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Infinite-Space";
-			};
-			name = Release;
-		};
+        2C8B6471225AAE27002C4010 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+                MTL_FAST_MATH = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        2C8B6472225AAE27002C4010 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                MTL_FAST_MATH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        2C8B6474225AAE27002C4010 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = F7C66RL8HZ;
+                INFOPLIST_FILE = "Infinite-Space/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-Space";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        2C8B6475225AAE27002C4010 /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = C2112AF2EAF76D2A978A4999 /* Pods-Infinite-Space.release.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = F7C66RL8HZ;
+                INFOPLIST_FILE = "Infinite-Space/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-Space";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        2C8B6477225AAE27002C4010 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 1FC2D2F846A27F19F7A258F7 /* Pods-Infinite-SpaceTests.debug.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = "Infinite-SpaceTests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-SpaceTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinite-Space.app/Infinite-Space";
+            };
+            name = Debug;
+        };
+        2C8B6478225AAE27002C4010 /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 0430C3DFF75994186DE7431D /* Pods-Infinite-SpaceTests.release.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = "Infinite-SpaceTests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-SpaceTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinite-Space.app/Infinite-Space";
+            };
+            name = Release;
+        };
+        2C8B647A225AAE27002C4010 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = "Infinite-SpaceUITests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-SpaceUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = "Infinite-Space";
+            };
+            name = Debug;
+        };
+        2C8B647B225AAE27002C4010 /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = F6D046942E07164BF82F6E18 /* Pods-Infinite-SpaceUITests.release.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = "Infinite-SpaceUITests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "aincrad-online.Infinite-SpaceUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = "Infinite-Space";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C8B6440225AAE27002C4010 /* Build configuration list for PBXProject "Infinite-Space" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C8B6471225AAE27002C4010 /* Debug */,
-				2C8B6472225AAE27002C4010 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2C8B6473225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-Space" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C8B6474225AAE27002C4010 /* Debug */,
-				2C8B6475225AAE27002C4010 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2C8B6476225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-SpaceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C8B6477225AAE27002C4010 /* Debug */,
-				2C8B6478225AAE27002C4010 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2C8B6479225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-SpaceUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C8B647A225AAE27002C4010 /* Debug */,
-				2C8B647B225AAE27002C4010 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        2C8B6440225AAE27002C4010 /* Build configuration list for PBXProject "Infinite-Space" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                2C8B6471225AAE27002C4010 /* Debug */,
+                2C8B6472225AAE27002C4010 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        2C8B6473225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-Space" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                2C8B6474225AAE27002C4010 /* Debug */,
+                2C8B6475225AAE27002C4010 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        2C8B6476225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-SpaceTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                2C8B6477225AAE27002C4010 /* Debug */,
+                2C8B6478225AAE27002C4010 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        2C8B6479225AAE27002C4010 /* Build configuration list for PBXNativeTarget "Infinite-SpaceUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                2C8B647A225AAE27002C4010 /* Debug */,
+                2C8B647B225AAE27002C4010 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = 2C8B643D225AAE27002C4010 /* Project object */;
+    };
+    rootObject = 2C8B643D225AAE27002C4010 /* Project object */;
 }
