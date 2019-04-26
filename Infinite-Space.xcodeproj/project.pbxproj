@@ -24,7 +24,7 @@
 		2C8B646F225AAE27002C4010 /* Infinite_SpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B646E225AAE27002C4010 /* Infinite_SpaceUITests.swift */; };
 		4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */; };
 		B17B6F5022723E0B00904CF7 /* leaderboard.gif in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F4F22723E0A00904CF7 /* leaderboard.gif */; };
-		B17B6F522272407200904CF7 /* Parallax.png in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F512272407200904CF7 /* Parallax.png */; };
+		B17B6F54227289E700904CF7 /* shipShot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F53227289E600904CF7 /* shipShot.mp3 */; };
 		B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */; };
 		B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6A226FF3270059A760 /* spaceEarth.gif */; };
 		B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6C227000510059A760 /* spaceBackground.gif */; };
@@ -82,7 +82,7 @@
 		3F7CF142B93248E4984D23EC /* Pods-Infinite-SpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-SpaceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-SpaceUITests/Pods-Infinite-SpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.debug.xcconfig"; sourceTree = "<group>"; };
 		B17B6F4F22723E0A00904CF7 /* leaderboard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaderboard.gif; sourceTree = "<group>"; };
-		B17B6F512272407200904CF7 /* Parallax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Parallax.png; sourceTree = "<group>"; };
+		B17B6F53227289E600904CF7 /* shipShot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shipShot.mp3; sourceTree = "<group>"; };
 		B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameAudio.mp3; sourceTree = "<group>"; };
 		B1CC0B6A226FF3270059A760 /* spaceEarth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceEarth.gif; sourceTree = "<group>"; };
 		B1CC0B6C227000510059A760 /* spaceBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceBackground.gif; sourceTree = "<group>"; };
@@ -153,12 +153,12 @@
 			isa = PBXGroup;
 			children = (
 				B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */,
+				B17B6F53227289E600904CF7 /* shipShot.mp3 */,
 				B17B6F4F22723E0A00904CF7 /* leaderboard.gif */,
 				B1CC0B6C227000510059A760 /* spaceBackground.gif */,
 				B1CC0B6A226FF3270059A760 /* spaceEarth.gif */,
 				B1D2B759226E85E500E6B177 /* HomePageAudio.mp3 */,
 				B1CC0B6E227008BC0059A760 /* space.jpg */,
-				B17B6F512272407200904CF7 /* Parallax.png */,
 				B1FCF1312267C45F00E22F3C /* InfiniteSpace.gif */,
 				2C8B6448225AAE27002C4010 /* AppDelegate.swift */,
 				2C8B644A225AAE27002C4010 /* GameScene.sks */,
@@ -337,11 +337,11 @@
 				2C8B6456225AAE27002C4010 /* Assets.xcassets in Resources */,
 				B17B6F5022723E0B00904CF7 /* leaderboard.gif in Resources */,
 				B1CC0B6F227008BC0059A760 /* space.jpg in Resources */,
-				B17B6F522272407200904CF7 /* Parallax.png in Resources */,
 				B1FCF1322267C45F00E22F3C /* InfiniteSpace.gif in Resources */,
 				B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */,
 				2C8B6459225AAE27002C4010 /* LaunchScreen.storyboard in Resources */,
 				2C8B644D225AAE27002C4010 /* Actions.sks in Resources */,
+				B17B6F54227289E700904CF7 /* shipShot.mp3 in Resources */,
 				2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */,
 				B1D2B75A226E85E600E6B177 /* HomePageAudio.mp3 in Resources */,
 				B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */,
