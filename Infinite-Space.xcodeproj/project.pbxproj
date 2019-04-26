@@ -23,6 +23,7 @@
 		4C0408228C9EE8A0B4258909 /* Pods_Infinite_SpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F722C69B17D6093D650EB4 /* Pods_Infinite_SpaceUITests.framework */; };
 		B17B6F5022723E0B00904CF7 /* leaderboard.gif in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F4F22723E0A00904CF7 /* leaderboard.gif */; };
 		B17B6F54227289E700904CF7 /* shipShot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17B6F53227289E600904CF7 /* shipShot.mp3 */; };
+		B17B6F562272B52900904CF7 /* HighScoreCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B6F552272B52900904CF7 /* HighScoreCellTableViewCell.swift */; };
 		B1CC0B69226EBDB50059A760 /* gameAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */; };
 		B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6A226FF3270059A760 /* spaceEarth.gif */; };
 		B1CC0B6D227000510059A760 /* spaceBackground.gif in Resources */ = {isa = PBXBuildFile; fileRef = B1CC0B6C227000510059A760 /* spaceBackground.gif */; };
@@ -79,6 +80,7 @@
 		9EF30CA712DE95B37CB6BF1C /* Pods-Infinite-Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infinite-Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infinite-Space/Pods-Infinite-Space.debug.xcconfig"; sourceTree = "<group>"; };
 		B17B6F4F22723E0A00904CF7 /* leaderboard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaderboard.gif; sourceTree = "<group>"; };
 		B17B6F53227289E600904CF7 /* shipShot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shipShot.mp3; sourceTree = "<group>"; };
+		B17B6F552272B52900904CF7 /* HighScoreCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreCellTableViewCell.swift; sourceTree = "<group>"; };
 		B1CC0B68226EBDB50059A760 /* gameAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameAudio.mp3; sourceTree = "<group>"; };
 		B1CC0B6A226FF3270059A760 /* spaceEarth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceEarth.gif; sourceTree = "<group>"; };
 		B1CC0B6C227000510059A760 /* spaceBackground.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceBackground.gif; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				B1D2B74F226E552400E6B177 /* CustomNavController.swift */,
 				2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */,
 				2C0CBEC4226FE06000B06727 /* GameOverScene.sks */,
+				B17B6F552272B52900904CF7 /* HighScoreCellTableViewCell.swift */,
 			);
 			path = "Infinite-Space";
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				2C8B644F225AAE27002C4010 /* GameScene.swift in Sources */,
 				2C8B6451225AAE27002C4010 /* GameViewController.swift in Sources */,
 				2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */,
+				B17B6F562272B52900904CF7 /* HighScoreCellTableViewCell.swift in Sources */,
 				2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */,
 				B1EC917B2266AD5B0019970D /* SettingsViewController.swift in Sources */,
 				B1D2B750226E552400E6B177 /* CustomNavController.swift in Sources */,

@@ -12,13 +12,15 @@ import FLAnimatedImage
 class LeaderboardTableViewController: UITableViewController {
     
     //weak var backgroundGif: FLAnimatedImageView!
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.backgroundView = FLAnimatedImageView()
         let backgroundGif = tableView.backgroundView as! FLAnimatedImageView
         
-        let path2 : String = Bundle.main.path(forResource: "leaderboard", ofType: "gif")!
+        let path2 : String = Bundle.main.path(forResource: "spaceBackground", ofType: "gif")!
         let url2 = URL(fileURLWithPath: path2)
         do {
             let gifData2 = try Data(contentsOf: url2)
@@ -27,24 +29,33 @@ class LeaderboardTableViewController: UITableViewController {
         } catch {
             print(error)
         }
+ 
     }
-        //tableView.backgroundView = UIImageView(image: UIImage(named: "spaceNebula.png"))
+
 
     // MARK: - Table view data source
 
 override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HighScoreCell", for: indexPath) as! HighScoreCellTableViewCell
+        
+        
+        cell.userNameLabel.text = "Komlan"
+        cell.highScoreLabel.text = "52"
+        return cell
     }
-
     
     @IBAction func onBackButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
     }
 }
 
