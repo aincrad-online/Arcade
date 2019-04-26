@@ -10,6 +10,8 @@
 		2399AEA2593C86EB603BEBD1 /* Pods_Infinite_Space.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */; };
 		2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */; };
 		2C0CBEC5226FE06000B06727 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CBEC4226FE06000B06727 /* GameOverScene.sks */; };
+		2C38A11E2272B16700F9613E /* SubmitScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38A11D2272B16700F9613E /* SubmitScene.swift */; };
+		2C38A1202272B46000F9613E /* SubmitScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C38A11F2272B46000F9613E /* SubmitScene.sks */; };
 		2C8B6449225AAE27002C4010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6448225AAE27002C4010 /* AppDelegate.swift */; };
 		2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B644A225AAE27002C4010 /* GameScene.sks */; };
 		2C8B644D225AAE27002C4010 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B644C225AAE27002C4010 /* Actions.sks */; };
@@ -59,6 +61,8 @@
 		29E81E2DA350D26194A5D611 /* Pods_Infinite_Space.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infinite_Space.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		2C0CBEC4226FE06000B06727 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		2C38A11D2272B16700F9613E /* SubmitScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitScene.swift; sourceTree = "<group>"; };
+		2C38A11F2272B46000F9613E /* SubmitScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SubmitScene.sks; sourceTree = "<group>"; };
 		2C8B6445225AAE27002C4010 /* Infinite-Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinite-Space.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8B6448225AAE27002C4010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8B644A225AAE27002C4010 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 				B1D2B74F226E552400E6B177 /* CustomNavController.swift */,
 				2C0CBEC2226FDD8C00B06727 /* GameOverScene.swift */,
 				2C0CBEC4226FE06000B06727 /* GameOverScene.sks */,
+				2C38A11D2272B16700F9613E /* SubmitScene.swift */,
+				2C38A11F2272B46000F9613E /* SubmitScene.sks */,
 			);
 			path = "Infinite-Space";
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 			files = (
 				B1CC0B6B226FF3270059A760 /* spaceEarth.gif in Resources */,
 				2C8B6454225AAE27002C4010 /* Main.storyboard in Resources */,
+				2C38A1202272B46000F9613E /* SubmitScene.sks in Resources */,
 				2C8B644B225AAE27002C4010 /* GameScene.sks in Resources */,
 				2C8B6456225AAE27002C4010 /* Assets.xcassets in Resources */,
 				B17B6F5022723E0B00904CF7 /* leaderboard.gif in Resources */,
@@ -461,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C38A11E2272B16700F9613E /* SubmitScene.swift in Sources */,
 				2C8B644F225AAE27002C4010 /* GameScene.swift in Sources */,
 				2C8B6451225AAE27002C4010 /* GameViewController.swift in Sources */,
 				2C0CBEC3226FDD8C00B06727 /* GameOverScene.swift in Sources */,

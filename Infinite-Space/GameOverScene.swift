@@ -8,6 +8,7 @@
 
 import Foundation
 import SpriteKit
+import SceneKit
 
 
 class GameOverScene : SKScene {
@@ -17,6 +18,7 @@ class GameOverScene : SKScene {
     var highScoreLabel = SKLabelNode()
     var playAgainButton = SKLabelNode()
     var mainMenuButton = SKLabelNode()
+    var submitButton = SKLabelNode()
     
     override func didMove(to view: SKView) {
         
@@ -42,6 +44,8 @@ class GameOverScene : SKScene {
         playAgainButton = childNode(withName: "playAgainButton") as! SKLabelNode
         
         mainMenuButton = childNode(withName: "mainMenuButton") as! SKLabelNode
+        
+        submitButton = childNode(withName: "submitButton") as! SKLabelNode
   
     }
     
@@ -63,8 +67,21 @@ class GameOverScene : SKScene {
                 
             }
             
+            if(submitButton.contains(point)){
+                let scene = SubmitScene(fileNamed: "SubmitScene")
+                scene?.scaleMode = self.scaleMode
+                
+                let theTransition = SKTransition.fade(withDuration: 0.5)
+                //HomeViewController.audioPlayer?.setVolume(SettingsViewController.vol, fadeDuration: 0.5)
+                
+                self.view?.presentScene(scene!, transition: theTransition)
+                
+            }
+            
+            
             if(mainMenuButton.contains(point)){
                 self.view?.window?.rootViewController?.dismiss(animated: true, completion: nil)
+                
             }
         }
     }
