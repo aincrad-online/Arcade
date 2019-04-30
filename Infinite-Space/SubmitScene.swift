@@ -11,7 +11,7 @@ import SpriteKit
 
 
 
-class SubmitScene : SKScene {
+class SubmitScene : SKScene, UITextFieldDelegate {
     
     var label = SKLabelNode()
     var submitButton = SKLabelNode()
@@ -50,15 +50,24 @@ class SubmitScene : SKScene {
         self.view?.addSubview(SubmitScene.textField)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        SubmitScene.textField.resignFirstResponder()
+        return true
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches{
             let point = touch.location(in: self)
+            SubmitScene.textField.delegate = self
+            
             
             if(submitButton.contains(point)){
                 SubmitScene.scoreArray.append(GameScene.highScore)
                 SubmitScene.userNameArray.append(SubmitScene.textField.text!)
                 SubmitScene.self.textField.removeFromSuperview()
                 self.view?.window?.rootViewController?.dismiss(animated: true, completion: nil)
+                self.view?.endEditing(true)
+                SubmitScene.textField.resignFirstResponder()
             }
             
             if(cancelButton.contains(point)){
